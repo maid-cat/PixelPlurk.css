@@ -201,8 +201,8 @@
 @font-face {
   font-family: "PlurkIconFont";
   src: url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.ttf') format('ttf');
+    url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -308,6 +308,24 @@
 :is(url({)), .plurk a.pictureservices, :is(url(})) {
   border-radius: 0;
   clip-path: var(--round-rect-2px);
+}
+.plurk-poll {
+  border-radius: 0;
+  border: var(--main-border);
+  border-image: var(--main-rounded-border);
+  margin: calc(0.5em + 2px) 4px;
+}
+.poll-candidate, .checkbox--label {
+  border-radius: 0;
+  border-width: var(--main-border-width);
+  clip-path: var(--round-rect-2px);
+}
+.checkbox.radio .checkbox--background {
+  border-radius: 0;
+  box-shadow: var(--main-border-box-shadow);
+}
+.checkbox .checkmark.checkmark-radio {
+  border-radius: 0;
 }
 
 #form_holder {
@@ -571,7 +589,7 @@
 :is(url(})) {
   border-radius: 0;
   border: var(--main-border);
-  box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
   clip-path: var(--round-rect-2px);
   padding: 7px 11px;
 }
@@ -593,7 +611,7 @@
   .button:hover,
   .orange-but:hover,
 :is(url(})) {
-  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
 }
 
 
