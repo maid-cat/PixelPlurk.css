@@ -119,6 +119,7 @@
 /* 細長發噗區 */
 #dashboard_holder {
   padding-top: 0;
+  z-index: 10;
 }
 #plurk-dashboard .dash-group-form {
   width: 100%;
