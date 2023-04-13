@@ -163,6 +163,8 @@
 }
 #plurk-dashboard .icons_holder li {
   margin: 0;
+  text-shadow: var(--main-border-box-shadow);
+  font-size: 22px;
 }
 #plurk-dashboard .icons_holder::after {
   display: none;
