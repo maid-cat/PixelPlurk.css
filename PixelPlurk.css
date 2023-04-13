@@ -3,6 +3,12 @@
   --timeline-height: calc(min(640px, 100vh - 42px - 70px));
   height: var(--timeline-height) !important;
 }
+.timeline-cnt {
+  z-index: auto;
+}
+.timeline-bg, #time_show, #dynamic_logo {
+  z-index: -1
+}
 .timeline-cnt .block_cnt {
   display: grid;
   grid-template: repeat(7, minmax(0, 1fr)) / 1fr;
