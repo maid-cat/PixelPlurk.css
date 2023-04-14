@@ -305,7 +305,8 @@
 .plurk_icon:not(.bday), .pinned_plurk_icon {
   border-radius: 0;
   clip-path: var(--round-rect-2px);
-  box-shadow: var(--pixel-inset-shadow);
+  outline: var(--pixel-border);
+  outline-offset: var(--neg-pixel-size);
 }
 .plurk_icon:not(.bday) {
   background-color: currentcolor;
@@ -329,7 +330,8 @@
   background: radial-gradient(transparent 8px, currentColor 8px);
   padding: 0 1.5px;
   clip-path: var(--round-rect-2px);
-  box-shadow: var(--pixel-inset-shadow);
+  outline: var(--pixel-border);
+  outline-offset: var(--neg-pixel-size);
 }
 .p_img {
   border: var(--pixel-border);
