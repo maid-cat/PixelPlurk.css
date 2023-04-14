@@ -314,11 +314,19 @@
 .plurk_icon img {
   image-rendering: pixelated;
 }
+.plurk_icon.coin::before {
+  display: block;
+  font-family: "PlurkIconFont";
+  content: "";
+  font-size: 20px;
+  line-height: 1;
+  color: #e7ad28;
+  background-color: #f8f0c9;
+  margin-left: -2px;
+  margin-top: -2px;
+}
 .plurk_icon.coin img {
-  width: 18px;
-  height: 18px;
-  margin-left: -1px;
-  margin-top: -1px;
+  display: none;
 }
 .plurk.porn .porn-icon {
   vertical-align: middle;
@@ -538,16 +546,18 @@
   left: 3px;
   top: 3px;
 }
-.segment-content:hover .profile-pic {
-  filter: none;
+.premium::before {
+  display: block;
+  font-family: "PlurkIconFont";
+  content: "";
+  font-size: 16px;
+  line-height: 1;
+  text-shadow: var(--pixel-text-shadow);
+  color: #f3d347;
 }
 #premium-icon {
-  filter: var(--pixelate-filter-2px);
-}
-.profile-info {
   display: none;
 }
-
 :is(url({)), #top_bar #top-bar-main #navbar-search > div input, :is(url(})) {
   border: none;
   border-radius: 0;
@@ -804,7 +814,7 @@
   /* from: https://nostalgic-css.github.io/NES.css/ */
   --pixel-border-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="black" /></svg>') 2 / 2 / 1;
   --pixel-border-image-rounded: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="black" /></svg>') 3 / 3 / 2;
-  --pixelate-filter-2px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx=".5" dy=".5" width="2" height="2"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius=".5"/></filter></svg>#pixelate');
+  --pixelate-filter-2px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width=".2" height=".2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx=".9" dy=".9" width="2" height="2"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius=".9"/></filter></svg>#pixelate');
   --pixelate-filter-4px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx="1.5" dy="1.5" width="4" height="4"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius="2"/></filter></svg>#pixelate');
   --round-rect-2px: polygon(
     0 2px, 2px 2px, 2px 0,
