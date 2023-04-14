@@ -301,6 +301,7 @@
 }
 .timeline-cnt .plurk.plurk_box .plurk_cnt {
   border-bottom: none;
+  padding-bottom: var(--pixel-size);
 }
 .plurk_icon:not(.bday), .pinned_plurk_icon {
   border-radius: 0;
