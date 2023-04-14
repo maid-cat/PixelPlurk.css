@@ -360,7 +360,7 @@
   border-radius: 0;
   clip-path: var(--round-rect-2px);
 }
-.timeline_control a, .bottom_start {
+.timeline_control a, .bottom_start, #time_show {
   border-radius: 0;
   clip-path: var(--round-rect-2px);
 }
