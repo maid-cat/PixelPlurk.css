@@ -1,4 +1,3 @@
-
 /* 河道排版 */
 #timeline_holder {
   height: calc(100vh - 42px - 70px) !important;
@@ -7,8 +6,8 @@
 .timeline-cnt {
   z-index: auto;
 }
-.timeline-bg, #time_show, #dynamic_logo {
-  z-index: -1
+.timeline-bg, #dynamic_logo {
+  pointer-events: none;
 }
 .timeline-cnt .block_cnt {
   display: grid;
