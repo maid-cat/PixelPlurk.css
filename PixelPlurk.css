@@ -533,7 +533,7 @@
   transform: scaleX(1.2);
   transform-origin: top left;
   letter-spacing: 8px;
-  color: black;
+  filter: contrast(500%);
 }
 :not(.dash-segment-award) > .segment-content {
   padding: 2px;
