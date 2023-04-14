@@ -741,7 +741,7 @@
   border-radius: 0 !important;
   clip-path: var(--round-rect-4px);
 }
-:is(url({)), #custom-css-help, .poll-editor-settings-item-title-info, :is(url(})) {
+:is(url({)), #custom-css-help, .poll-editor-settings-item-title-info, .more-options .question-mark, :is(url(})) {
   border-radius: 0 !important;
   clip-path: var(--round-rect-2px);
   font-family: "Cubic 11", "Lucida Console" !important;
