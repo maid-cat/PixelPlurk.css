@@ -362,9 +362,6 @@
   width: 20px;
   height: 20px;
 }
-#plurk-dashboard .dash-segment-award .segment-content .award_bar {
-  filter: drop-shadow(2px 2px rgba(0,0,0,0.2));
-}
 #plurk-dashboard .dash-segment-award .segment-content .award_bar div {
   background-color: #5e3f2b;
   image-rendering: pixelated;
