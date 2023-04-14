@@ -171,7 +171,7 @@
 }
 #plurk-dashboard .icons_holder li {
   margin: 0;
-  text-shadow: var(--pixel-border-box-shadow);
+  text-shadow: var(--pixel-box-shadow);
   font-size: 22px;
 }
 #plurk-dashboard .icons_holder .pif-emoticon::after {
@@ -242,7 +242,7 @@
 .plurk_icon:not(.bday), .pinned_plurk_icon {
   border-radius: 0;
   clip-path: var(--round-rect-2px);
-  box-shadow: var(--pixel-border-inset-shadow);
+  box-shadow: var(--pixel-inset-shadow);
 }
 .plurk_icon:not(.bday) {
   background-color: currentcolor;
@@ -266,7 +266,7 @@
   background: radial-gradient(transparent 8px, currentColor 8px);
   padding: 0 1.5px;
   clip-path: var(--round-rect-2px);
-  box-shadow: var(--pixel-border-inset-shadow);
+  box-shadow: var(--pixel-inset-shadow);
 }
 .p_img {
   border: var(--pixel-border);
@@ -306,7 +306,7 @@
 :is(url({)), .plurk a.meta, .plurk a.meta:hover, :is(url(})) {
   border-radius: 0;
   padding: 0;
-  border-width: var(--pixel-border-width);
+  border-width: var(--pixel-size);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), .plurk a.ogvideo::after, .plurk a.videoservices::after, :is(url(})) {
@@ -329,12 +329,12 @@
 }
 .poll-candidate, .checkbox--label {
   border-radius: 0;
-  border-width: var(--pixel-border-width);
+  border-width: var(--pixel-size);
   clip-path: var(--round-rect-2px);
 }
 .checkbox.radio .checkbox--background {
   border-radius: 0;
-  box-shadow: var(--pixel-border-box-shadow);
+  box-shadow: var(--pixel-box-shadow);
 }
 .checkbox .checkmark.checkmark-radio {
   border-radius: 0;
@@ -353,7 +353,7 @@
   margin: 0;
 }
 .response-manager {
-  border-width: var(--pixel-border-width);
+  border-width: var(--pixel-size);
   border-bottom: none;
 }
 
@@ -377,7 +377,7 @@
 :is(url({)), .m_qualifier, :is(url(})) {
   padding: 7px 10px 8px !important;
   border-radius: 0 !important;
-  box-shadow: var(--pixel-border-box-shadow) !important;
+  box-shadow: var(--pixel-box-shadow) !important;
 }
 :is(url({)), .plurkForm.mini-mode .m_qualifier, .mini_form .m_qualifier, :is(url(})) {
   padding: 4px 6px 3px !important;
@@ -414,7 +414,7 @@
 
 .profile-pic {
   border-radius: 0 !important;
-  box-shadow: var(--pixel-border-box-shadow) !important;
+  box-shadow: var(--pixel-box-shadow) !important;
   width: 80px !important;
   height: 80px !important;
   left: 3px;
@@ -472,7 +472,7 @@
 }
 :is(url({)), .friends-select-list li .avatar, :is(url(})) {
   border-radius: 0 !important;
-  --box-shadow: var(--pixel-border-box-shadow);
+  --box-shadow: var(--pixel-box-shadow);
   border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
@@ -483,11 +483,11 @@
 }
 :is(url({)), #noti-list .header .noti-alert-switch, :is(url(})) {
   border-radius: 0;
-  box-shadow: var(--pixel-border-inset-shadow);
+  box-shadow: var(--pixel-inset-shadow);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), #noti-list .header .noti-alert-switch .pusher, :is(url(})) {
-  box-shadow: var(--pixel-border-box-shadow), inset -2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--pixel-box-shadow), inset -2px -2px rgba(0, 0, 0, 0.2);
   border-radius: 0;
 }
 :is(url({)), #noti-list li, :is(url(})) {
@@ -512,7 +512,7 @@
 }
 :is(url({)),  .info_menu .profile_pic, :is(url(})) {
   border-radius: 0;
-  box-shadow: var(--pixel-border-box-shadow);
+  box-shadow: var(--pixel-box-shadow);
   image-rendering: pixelated;
 }
 :is(url({)),  .info_menu .menu, :is(url(})) {
@@ -530,8 +530,8 @@
   filter: invert();
 }
 :is(url({)), .pop-menu li.sep, :is(url(})) {
-  background: var(--pixel-border-color) !important;
-  height: var(--pixel-border-width) !important;
+  background: var(--pixel-color) !important;
+  height: var(--pixel-size) !important;
   margin: 4px 0 !important;
 }
 
@@ -642,17 +642,17 @@
 
 
 :is(url({)), html, :is(url(})) {
-  --pixel-border-color: black;
-  --pixel-border-width: 2px;
-  --neg-pixel-border-width: calc(-1 * var(--pixel-border-width));
-  --pixel-border: var(--pixel-border-width) solid var(--pixel-border-color);
-  --pixel-border-box-shadow:
-    var(--pixel-border-width) 0 var(--pixel-border-color),
-    0 var(--pixel-border-width) var(--pixel-border-color),
-    var(--neg-pixel-border-width) 0 var(--pixel-border-color),
-    0 var(--neg-pixel-border-width) var(--pixel-border-color);
-  --pixel-border-inset-shadow:
-    inset 0 0 0 var(--pixel-border-width) var(--pixel-border-color);
+  --pixel-color: black;
+  --pixel-size: 2px;
+  --neg-pixel-size: calc(-1 * var(--pixel-size));
+  --pixel-border: var(--pixel-size) solid var(--pixel-color);
+  --pixel-box-shadow:
+    var(--pixel-size) 0 var(--pixel-color),
+    0 var(--pixel-size) var(--pixel-color),
+    var(--neg-pixel-size) 0 var(--pixel-color),
+    0 var(--neg-pixel-size) var(--pixel-color);
+  --pixel-inset-shadow:
+    inset 0 0 0 var(--pixel-size) var(--pixel-color);
   /* from: https://nostalgic-css.github.io/NES.css/ */
   --pixel-border-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="black" /></svg>') 2 / 2 / 1;
   --pixel-border-image-rounded: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="black" /></svg>') 3 / 3 / 2;
