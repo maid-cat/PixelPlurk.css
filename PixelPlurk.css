@@ -276,6 +276,24 @@
   vertical-align: -15%;
 }
 
+.cmp_back_to_today {
+  border-radius: 0;
+  clip-path: var(--round-rect-4px);  
+  width: auto;
+  margin-left: 0;
+  padding: 0 6px;
+}
+.cmp_arrow_right + .cmp_back_to_today {
+  right: 0;
+}
+.cmp_back_to_today::before {
+  position: static;
+  display: inline;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: .5ch;
+  color: inherit;
+}
 .timeline-cnt .plurk_cnt {
   border: var(--pixel-border);
   border-image: var(--pixel-border-image-rounded);
