@@ -447,6 +447,17 @@
   border-radius: 0;
   clip-path: var(--round-rect-4px);
 }
+:is(url({)),
+  #top_bar #top-bar-user #navbar-notify .alert,
+  #top_bar #top-bar-user #navbar-premium .alert,
+:is(url(})) {
+  transform: none;
+  width: 4px;
+  height: 4px;
+  border-radius: 0;
+  margin-right: 4px;
+  margin-top: 2px;
+}
 
 :is(url({)), .friend_man, :is(url(})) {
   border-radius: 0;
