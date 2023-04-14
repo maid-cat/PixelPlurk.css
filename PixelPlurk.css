@@ -432,6 +432,11 @@
   display: none;
 }
 
+:is(url({)), #top_bar #top-bar-main #navbar-search > div input, :is(url(})) {
+  border: none;
+  border-radius: 0;
+  clip-path: var(--round-rect-4px);
+}
 
 :is(url({)), .friend_man, :is(url(})) {
   border-radius: 0;
