@@ -1,3 +1,4 @@
+
 /* 河道排版 */
 #timeline_holder {
   height: calc(100vh - 42px - 70px) !important;
@@ -532,8 +533,9 @@
   font-size: 16px;
   transform: scaleX(1.2);
   transform-origin: top left;
-  letter-spacing: 8px;
+  letter-spacing: .5em;
   filter: contrast(500%);
+  background: none;
 }
 :not(.dash-segment-award) > .segment-content {
   padding: 2px;
