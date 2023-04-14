@@ -1,3 +1,4 @@
+
 /* 河道排版 */
 #timeline_holder {
   height: calc(100vh - 42px - 70px) !important;
@@ -171,8 +172,6 @@
 }
 #plurk-dashboard .icons_holder li {
   margin: 0;
-  text-shadow: var(--pixel-box-shadow);
-  font-size: 22px;
 }
 #plurk-dashboard .icons_holder .pif-emoticon::after {
   display: none;
@@ -381,6 +380,10 @@
 }
 :is(url({)), .plurkForm.mini-mode .m_qualifier, .mini_form .m_qualifier, :is(url(})) {
   padding: 4px 6px 3px !important;
+}
+:is(url({)), .icons_holder li::before, :is(url(})) {
+  text-shadow: var(--pixel-text-shadow);
+  font-size: calc(13em / 15);
 }
 .submit_img {
   border-radius: 0;
@@ -651,6 +654,12 @@
     0 var(--pixel-size) var(--pixel-color),
     var(--neg-pixel-size) 0 var(--pixel-color),
     0 var(--neg-pixel-size) var(--pixel-color);
+  /* 1/13 ~= .077 */
+  --pixel-text-shadow:
+    .077em 0 var(--pixel-color),
+    0 .077em var(--pixel-color),
+    -.077em 0 var(--pixel-color),
+    0 -.077em var(--pixel-color);
   --pixel-inset-shadow:
     inset 0 0 0 var(--pixel-size) var(--pixel-color);
   /* from: https://nostalgic-css.github.io/NES.css/ */
