@@ -594,12 +594,24 @@
   button,
   .button,
   .orange-but,
+  #emoticon-selector .header .manager-button,
 :is(url(})) {
   border-radius: 0;
   border: var(--main-border);
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
   clip-path: var(--round-rect-2px);
   padding: 7px 11px;
+}
+
+:is(url({)),
+  :is(input[type="button"]:hover,
+  input[type="submit"]:hover,
+  button:hover,
+  .button:hover,
+  .orange-but:hover,
+  #emoticon-selector .header .manager-button:hover,
+:is(url(})) {
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
 }
 
 :is(url({)),
@@ -612,15 +624,13 @@
   padding: 4px 8px;
 }
 
-:is(url({)),
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  button:hover,
-  .button:hover,
-  .orange-but:hover,
-:is(url(})) {
-  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
+:is(url({)), #emoticon-selector .header .manager-button, :is(url(})) {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 :is(url({)), html, :is(url(})) {
