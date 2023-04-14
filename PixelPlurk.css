@@ -219,6 +219,53 @@
   font-style: normal;
 }
 
+:is(url({)), input, textarea, select, .time-picker-input-container, :is(url(})) {
+  border-radius: 0 !important;
+  border-width: var(--pixel-size) !important;
+  border-style: solid;
+  clip-path: var(--round-rect-2px);
+}
+:is(url({)),
+  input[type="button"],
+  input[type="submit"],
+  button,
+  .button,
+  .orange-but,
+  #emoticon-selector .header .manager-button,
+:is(url(})) {
+  border-radius: 0 !important;
+  border: var(--pixel-border);
+  border-width: var(--pixel-size) !important;
+  box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
+  clip-path: var(--round-rect-2px);
+  padding: 7px 11px;
+}
+:is(url({)),
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  button:hover,
+  .button:hover,
+  .orange-but:hover,
+  #emoticon-selector .header .manager-button:hover,
+:is(url(})) {
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
+}
+:is(url({)),
+  input[type="button"].small-button,
+  input[type="submit"].small-button,
+  button.small-button,
+  .button.small-button,
+  .orange-but.small-button,
+:is(url(})) {
+  padding: 4px 8px;
+}
+:is(url({)), #emoticon-selector .header .manager-button, :is(url(})) {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :is(url({)), body, #top_bar, button, :is(url(})),
 ._lch_ h2,
 .karma_hover,
@@ -403,6 +450,45 @@
 .submit_img:hover {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
 }
+:is(url({)), .more-options .option-limit, :is(url(})) {
+  border-radius: 0;
+  clip-path: var(--round-rect-4px);
+}
+:is(url({)), .more-options .comp-input-td .comp-input, :is(url(})) {
+  border-radius: 0;
+  border-width: var(--pixel-size);
+  clip-path: var(--round-rect-2px);
+}
+:is(url({)), .more-options .selection, .more-options .selection .selection-menu, :is(url(})) {
+  border-radius: 0;
+  border: none !important;
+  box-shadow:
+    var(--pixel-size) 0 var(--pixel-color),
+    0 var(--pixel-size) var(--pixel-color),
+    var(--neg-pixel-size) 0 var(--pixel-color),
+    0 var(--neg-pixel-size) var(--pixel-color);
+}
+:is(url({)), .more-options .selection, :is(url(})) {
+  --pixel-color: #DDDDE2;
+}
+:is(url({)), .more-options .selection:hover, :is(url(})) {
+  --pixel-color: #CCCCD2;
+}
+:is(url({)), .more-options .selection .selection-menu, :is(url(})) {
+  left: 0;
+}
+:is(url({)), .more-options .checkbox, :is(url(})) {
+  border-radius: 0;
+  border-width: var(--pixel-size) !important;
+  clip-path: var(--round-rect-2px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+:is(url({)), .more-options .checkbox::before, :is(url(})) {
+  transform: none;
+  position: static;
+}
 
 #plurk-dashboard h2 {
   font-size: 16px;
@@ -495,11 +581,22 @@
 }
 :is(url({)), .friends-select-list li .avatar, :is(url(})) {
   border-radius: 0 !important;
-  --box-shadow: var(--pixel-box-shadow);
   border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
-
+:is(url({)), .limited-selector .limited-selector-selected, :is(url(})) {
+  border-top: var(--pixel-border);
+  box-shadow: none;
+}
+:is(url({)), .limited-selector .limited-selector-selected ul, :is(url(})) {
+  border-radius: 0;
+  border: var(--pixel-border);
+  clip-path: var(--round-rect-2px);
+}
+:is(url({)), .limited-selector .limited-selector-selected ul, :is(url(})) {
+  border-radius: 0;
+  clip-path: var(--round-rect-2px);
+}
 
 :is(url({)), .pop-view-content .header, #noti-list .header, :is(url(})) {
   border-bottom: var(--pixel-border);
@@ -557,6 +654,9 @@
   height: var(--pixel-size) !important;
   margin: 4px 0 !important;
 }
+:is(url({)), .theme-menu ul, :is(url(})) {
+  border-bottom: var(--pixel-border) !important;
+}
 
 :is(url({)), .pop-view-arrow::after, :is(url(})) {
   width: 6px;
@@ -603,6 +703,46 @@
   margin-left: -2px;
   margin-right: -2px;
 }
+:is(url({)), .form-table, :is(url(})) {
+  border-radius: 0;
+  clip-path: var(--round-rect-4px);
+}
+:is(url({)), .theme-selector, :is(url(})) {
+  border-radius: 0 !important;
+  clip-path: var(--round-rect-4px);
+}
+:is(url({)), #custom-css-help, .poll-editor-settings-item-title-info, :is(url(})) {
+  border-radius: 0 !important;
+  clip-path: var(--round-rect-2px);
+  font-family: "Cubic 11", "Lucida Console" !important;
+}
+:is(url({)), #creature-selection .creature, :is(url(})) {
+  border-radius: 0 !important;
+  clip-path: var(--round-rect-4px);
+}
+:is(url({)), .poll-editor-section-content, :is(url(})) {
+  border-radius: 0 !important;
+  clip-path: var(--round-rect-4px);
+}
+:is(url({)), .poll-editor-emoticon-button, .poll-editor-emoticon-button:hover, :is(url(})) {
+  box-shadow: none !important;
+  text-shadow: var(--pixel-text-shadow);
+}
+:is(url({)), .poll-editor-emoticon-button .pif-emoticon::after, :is(url(})) {
+  display: none;
+}
+:is(url({)), .poll-editor-checkbox-label, :is(url(})) {
+  border-radius: 0 !important;
+  box-shadow: var(--pixel-inset-shadow);
+  clip-path: var(--round-rect-2px);
+}
+:is(url({)), .poll-editor-checkbox-label::after, :is(url(})) {
+  border-radius: 0 !important;
+  box-shadow: var(--pixel-box-shadow), inset -2px -2px rgba(0,0,0,0.2);
+}
+:is(url({)), .poll-editor-end-time-button, :is(url(})) {
+  border: var(--pixel-border) !important;
+}
 :is(url({)), .divplurk .avatar, .divresponse .avatar, :is(url(})) {
   line-height: 0;
   height: auto !important;
@@ -619,48 +759,7 @@
   height: 30px !important;
 }
 
-:is(url({)),
-  input[type="button"],
-  input[type="submit"],
-  button,
-  .button,
-  .orange-but,
-  #emoticon-selector .header .manager-button,
-:is(url(})) {
-  border-radius: 0;
-  border: var(--pixel-border);
-  box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
-  clip-path: var(--round-rect-2px);
-  padding: 7px 11px;
-}
 
-:is(url({)),
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  button:hover,
-  .button:hover,
-  .orange-but:hover,
-  #emoticon-selector .header .manager-button:hover,
-:is(url(})) {
-  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
-}
-
-:is(url({)),
-  input[type="button"].small-button,
-  input[type="submit"].small-button,
-  button.small-button,
-  .button.small-button,
-  .orange-but.small-button,
-:is(url(})) {
-  padding: 4px 8px;
-}
-
-:is(url({)), #emoticon-selector .header .manager-button, :is(url(})) {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
