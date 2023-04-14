@@ -1,4 +1,3 @@
-
 /* 河道排版 */
 #timeline_holder {
   height: calc(100vh - 42px - 70px) !important;
@@ -363,6 +362,19 @@
   width: 20px;
   height: 20px;
 }
+#plurk-dashboard .dash-segment-award .segment-content .award_bar {
+  filter: drop-shadow(2px 2px rgba(0,0,0,0.2));
+}
+#plurk-dashboard .dash-segment-award .segment-content .award_bar div {
+  background-color: #5e3f2b;
+  image-rendering: pixelated;
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
+  border-image-outset: 1;
+  clip-path: var(--round-rect-4px);
+  background-origin: border-box;
+  margin: 0 12px 8px 0;
+}
 
 :is(url({)), .input_holder, :is(url(})) {
   border-radius: 0 !important;
@@ -677,4 +689,5 @@
     calc(100% - 4px) 0, calc(100% - 4px) 2px, calc(100% - 2px) 2px,  calc(100% - 2px) 4px, 100% 4px,
     100% calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px),  calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) 100%,
     4px 100%, 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0 calc(100% - 4px));
+  --hexagon-40px: path('M16,0h4v2h4v2h2v2h4v2h4v2h2v20h-2v2h-4v2h-4v2h-2v2h-4v2h-4v-2h-4v-2h-2v-2h-4v-2h-4v-2h-2v-20h2v-2h4v-2h4v-2h2v-2h4v-2');
 }
