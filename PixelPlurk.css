@@ -412,6 +412,10 @@
 .checkbox .checkmark.checkmark-radio {
   border-radius: 0;
 }
+:is(url({)), .manager a, :is(url(})) {
+  border-radius: 0;
+  clip-path: var(--round-rect-2px);
+}
 
 #form_holder {
   box-shadow: none;
@@ -425,9 +429,12 @@
 :is(url({)), .plurk_box .mini_form .icons_holder, :is(url(})) {
   margin: 0;
 }
-.response-manager {
-  border-width: var(--pixel-size);
-  border-bottom: none;
+:is(url({)), .response-manager, :is(url(})) {
+  border-width: var(--pixel-size) !important;
+  border-bottom: none !important;
+}
+:is(url({)), .response-manager > *, :is(url(})) {
+  border-radius: 0 !important;
 }
 
 .p_img img, .friend_holder img {
