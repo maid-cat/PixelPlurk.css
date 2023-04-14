@@ -436,6 +436,9 @@
 :is(url({)), .response-manager > *, :is(url(})) {
   border-radius: 0 !important;
 }
+:is(url({)), .response-manager .coin, :is(url(})) {
+  clip-path: var(--round-rect-2px);
+}
 
 .p_img img, .friend_holder img {
   image-rendering: pixelated;
