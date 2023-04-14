@@ -8,6 +8,31 @@
 
 複製[本體CSS](https://github.com/maid-cat/PixelPlurk.css/blob/main/PixelPlurk.css)，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
 
+## 自訂
+
+### 邊線顏色
+
+...待補完
+
+### 噗文背景色
+
+```css
+.timeline-cnt .plurk_cnt, #form_holder, :is(url({)), .pop-window-view, :is(url(})) {
+  background-color: <色碼>;
+}
+ #form_holder .plurk_cnt, :is(url({)), .divplurk, .response_box, .mini_form, :is(url(})) {
+  background-color: transparent !important;
+}
+```
+
+### 主控台背景色
+
+```css
+.segment-content {
+  background-color: <色碼>;
+}
+```
+
 
 ## 特別感謝
 
