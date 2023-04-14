@@ -1,7 +1,7 @@
 /* 河道排版 */
 #timeline_holder {
-  --timeline-height: calc(min(640px, 100vh - 42px - 70px));
-  height: var(--timeline-height) !important;
+  height: calc(100vh - 42px - 70px) !important;
+  max-height: 640px;
 }
 .timeline-cnt {
   z-index: auto;
@@ -36,12 +36,12 @@
 :is(url({)), .timeline-cnt .plurk[style*="top: 86.875%;"], :is(url(})) {grid-row: 8 / 9;}
 
 
-/* 噗首排版 */
+/* 噗首內部排版 */
 .timeline-cnt .plurk {
   display: grid;
   grid-template:
-  "img qual response_count" auto
-  "img content content" minmax(0, 1fr) / auto 1fr auto;
+    "img qual response_count" auto
+    "img content content" minmax(0, 1fr) / auto 1fr auto;
   column-gap: 4px;
 }
 .timeline-cnt .plurk > table,
@@ -87,8 +87,8 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template:
-  "img qual response_count" 20px
-  "img content content" minmax(0, 1fr) / 44px 1fr auto;
+    "img qual response_count" 20px
+    "img content content" minmax(0, 1fr) / 44px 1fr auto;
   grid-template: subgrid / subgrid;
   padding: 0;
   column-gap: 4px;
@@ -122,6 +122,7 @@
   justify-self: end;
 }
 
+
 /* 細長發噗區 */
 #dashboard_holder {
   padding-top: 0;
@@ -146,18 +147,19 @@
 }
 #plurk-dashboard .plurkForm {
   display: grid;
-  grid-template-areas: "input icons submit" "misc misc misc";
-  grid-template-columns: 1fr auto auto;
+  grid-template:
+    "input icons submit" auto
+    "misc misc misc" auto / 1fr auto auto;
   column-gap: 4px;
 }
 #plurk-dashboard .input_holder {
   grid-area: input;
 }
 .preview-list {
-  border-top: var(--main-border);
+  border-top: var(--pixel-border);
 }
 .preview-list ul li {
-  border: var(--main-border);
+  border: var(--pixel-border);
 }
 #plurk-dashboard .icons_holder {
   grid-area: icons;
@@ -169,7 +171,7 @@
 }
 #plurk-dashboard .icons_holder li {
   margin: 0;
-  text-shadow: var(--main-border-box-shadow);
+  text-shadow: var(--pixel-border-box-shadow);
   font-size: 22px;
 }
 #plurk-dashboard .icons_holder .pif-emoticon::after {
@@ -201,7 +203,8 @@
   padding: 0 !important;
 }
 
-/* 像素化*/
+
+/* 像素風格 */
 @font-face {
   font-family: "Cubic 11";
   font-display: swap;
@@ -229,8 +232,8 @@
 }
 
 .timeline-cnt .plurk_cnt {
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
   box-shadow: none;
 }
 .timeline-cnt .plurk.plurk_box .plurk_cnt {
@@ -239,8 +242,8 @@
 .plurk_icon:not(.bday), .pinned_plurk_icon {
   border-radius: 0;
   clip-path: var(--round-rect-2px);
-  outline: var(--main-border);
-  outline-offset: var(--neg-main-border-width);
+  outline: var(--pixel-border);
+  outline-offset: var(--neg-pixel-border-width);
 }
 .plurk_icon:not(.bday) {
   background-color: currentcolor;
@@ -264,11 +267,11 @@
   background: radial-gradient(transparent 8px, currentColor 8px);
   padding: 0 1.5px;
   clip-path: var(--round-rect-2px);
-  outline: var(--main-border);
-  outline-offset: var(--neg-main-border-width);
+  outline: var(--pixel-border);
+  outline-offset: var(--neg-pixel-border-width);
 }
 .p_img {
-  border: var(--main-border);
+  border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
 .response_count {
@@ -305,7 +308,7 @@
 :is(url({)), .plurk a.meta, .plurk a.meta:hover, :is(url(})) {
   border-radius: 0;
   padding: 0;
-  border-width: var(--main-border-width);
+  border-width: var(--pixel-border-width);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), .plurk a.ogvideo::after, .plurk a.videoservices::after, :is(url(})) {
@@ -322,18 +325,18 @@
 }
 .plurk-poll {
   border-radius: 0;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
   margin: calc(0.5em + 2px) 4px;
 }
 .poll-candidate, .checkbox--label {
   border-radius: 0;
-  border-width: var(--main-border-width);
+  border-width: var(--pixel-border-width);
   clip-path: var(--round-rect-2px);
 }
 .checkbox.radio .checkbox--background {
   border-radius: 0;
-  box-shadow: var(--main-border-box-shadow);
+  box-shadow: var(--pixel-border-box-shadow);
 }
 .checkbox .checkmark.checkmark-radio {
   border-radius: 0;
@@ -341,18 +344,18 @@
 
 #form_holder {
   box-shadow: none;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
   border-top: none;
 }
 :is(url({)), .response_box, .plurk_box .mini_form, :is(url(})) {
-  border-top: var(--main-border) !important;
+  border-top: var(--pixel-border) !important;
 }
 :is(url({)), .plurk_box .mini_form .icons_holder, :is(url(})) {
   margin: 0;
 }
 .response-manager {
-  border-width: var(--main-border-width);
+  border-width: var(--pixel-border-width);
   border-bottom: none;
 }
 
@@ -366,7 +369,7 @@
 
 :is(url({)), .input_holder, :is(url(})) {
   border-radius: 0 !important;
-  border: var(--main-border) !important;
+  border: var(--pixel-border) !important;
   clip-path: var(--round-rect-2px) !important;
 }
 :is(url({)), .qual_holder, :is(url(})) {
@@ -376,14 +379,14 @@
 :is(url({)), .m_qualifier, :is(url(})) {
   padding: 7px 10px 8px !important;
   border-radius: 0 !important;
-  box-shadow: var(--main-border-box-shadow) !important;
+  box-shadow: var(--pixel-border-box-shadow) !important;
 }
 :is(url({)), .plurkForm.mini-mode .m_qualifier, .mini_form .m_qualifier, :is(url(})) {
   padding: 4px 6px 3px !important;
 }
 .submit_img {
   border-radius: 0;
-  border: var(--main-border);
+  border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
 }
@@ -403,8 +406,8 @@
   border-radius: 0;
   margin: 2px;
   margin-top: 12px;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
 }
 #full_name {
   display: flex;
@@ -413,7 +416,7 @@
 
 .profile-pic {
   border-radius: 0 !important;
-  box-shadow: var(--main-border-box-shadow) !important;
+  box-shadow: var(--pixel-border-box-shadow) !important;
   width: 80px !important;
   height: 80px !important;
   left: 3px;
@@ -432,7 +435,7 @@
 
 :is(url({)), .friend_man, :is(url(})) {
   border-radius: 0;
-  border: var(--main-border);
+  border: var(--pixel-border);
   padding: 4px 8px;
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
   clip-path: var(--round-rect-2px);
@@ -443,8 +446,8 @@
 
 :is(url({)), .pop-view, :is(url(})) {
   border-radius: 0;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
 }
 :is(url({)), .pop-view-content, :is(url(})) {
   padding: 2px;
@@ -466,23 +469,23 @@
 }
 :is(url({)), .friends-select-list li .avatar, :is(url(})) {
   border-radius: 0 !important;
-  --box-shadow: var(--main-border-box-shadow);
-  border: var(--main-border);
+  --box-shadow: var(--pixel-border-box-shadow);
+  border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
 
 
 :is(url({)), .pop-view-content .header, #noti-list .header, :is(url(})) {
-  border-bottom: var(--main-border);
+  border-bottom: var(--pixel-border);
 }
 :is(url({)), #noti-list .header .noti-alert-switch, :is(url(})) {
   border-radius: 0;
-  outline: var(--main-border);
-  outline-offset: var(--neg-main-border-width);
+  outline: var(--pixel-border);
+  outline-offset: var(--neg-pixel-border-width);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), #noti-list .header .noti-alert-switch .pusher, :is(url(})) {
-  box-shadow: var(--main-border-box-shadow), inset -2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--pixel-border-box-shadow), inset -2px -2px rgba(0, 0, 0, 0.2);
   border-radius: 0;
 }
 :is(url({)), #noti-list li, :is(url(})) {
@@ -498,20 +501,20 @@
   height: 39px;
   image-rendering: pixelated;
   border-radius: 0;
-  border: var(--main-border);
+  border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), #emoticon-tabs, :is(url(})) {
   box-shadow: none;
-  border-top: var(--main-border);
+  border-top: var(--pixel-border);
 }
 :is(url({)),  .info_menu .profile_pic, :is(url(})) {
   border-radius: 0;
-  box-shadow: var(--main-border-box-shadow);
+  box-shadow: var(--pixel-border-box-shadow);
   image-rendering: pixelated;
 }
 :is(url({)),  .info_menu .menu, :is(url(})) {
-  border-top: var(--main-border);
+  border-top: var(--pixel-border);
 }
 :is(url({)),  .info_menu .menu li, :is(url(})) {
   margin: 0;
@@ -525,8 +528,8 @@
   filter: invert();
 }
 :is(url({)), .pop-menu li.sep, :is(url(})) {
-  background: var(--main-border-color) !important;
-  height: var(--main-border-width) !important;
+  background: var(--pixel-border-color) !important;
+  height: var(--pixel-border-width) !important;
   margin: 4px 0 !important;
 }
 
@@ -534,8 +537,8 @@
   width: 6px;
   height: 6px;
   transform: none;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
 }
 :is(url({)), .pop-view[direction=top], :is(url(})) {
   margin-bottom: 6px;
@@ -565,11 +568,11 @@
 
 :is(url({)), .pop-window-view, :is(url(})) {
   border-radius: 0;
-  border: var(--main-border);
-  border-image: var(--main-rounded-border);
+  border: var(--pixel-border);
+  border-image: var(--pixel-border-image-rounded);
 }
 :is(url({)), .pop-window-header, :is(url(})) {
-  border-bottom: var(--main-border);
+  border-bottom: var(--pixel-border);
 }
 :is(url({)), .pop-window-content, :is(url(})) {
   margin-left: -2px;
@@ -579,7 +582,7 @@
   line-height: 0;
   height: auto !important;
   width: auto !important;
-  border: var(--main-border);
+  border: var(--pixel-border);
   clip-path: var(--round-rect-2px);
 }
 :is(url({)), .divplurk .avatar img, .divresponse .avatar img, :is(url(})) {
@@ -600,14 +603,14 @@
   #emoticon-selector .header .manager-button,
 :is(url(})) {
   border-radius: 0;
-  border: var(--main-border);
+  border: var(--pixel-border);
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
   clip-path: var(--round-rect-2px);
   padding: 7px 11px;
 }
 
 :is(url({)),
-  :is(input[type="button"]:hover,
+  input[type="button"]:hover,
   input[type="submit"]:hover,
   button:hover,
   .button:hover,
@@ -637,28 +640,28 @@
 
 
 :is(url({)), html, :is(url(})) {
-  --main-border-color: black;
-  --main-border-width: 2px;
-  --neg-main-border-width: calc(-1 * var(--main-border-width));
-  --main-border: var(--main-border-width) solid var(--main-border-color);
-  --main-border-box-shadow:
-  var(--main-border-width) 0 var(--main-border-color),
-  0 var(--main-border-width) var(--main-border-color),
-  var(--neg-main-border-width) 0 var(--main-border-color),
-  0 var(--neg-main-border-width) var(--main-border-color);
+  --pixel-border-color: black;
+  --pixel-border-width: 2px;
+  --neg-pixel-border-width: calc(-1 * var(--pixel-border-width));
+  --pixel-border: var(--pixel-border-width) solid var(--pixel-border-color);
+  --pixel-border-box-shadow:
+    var(--pixel-border-width) 0 var(--pixel-border-color),
+    0 var(--pixel-border-width) var(--pixel-border-color),
+    var(--neg-pixel-border-width) 0 var(--pixel-border-color),
+    0 var(--neg-pixel-border-width) var(--pixel-border-color);
   /* from: https://nostalgic-css.github.io/NES.css/ */
-  --main-rounded-border: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="black" /></svg>') 3 / 3 / 2;
-  --main-rounded-border-2px: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="black" /></svg>') 2 / 2 / 1;
-  --pixelate-filter-4px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx="1.5" dy="1.5" width="4" height="4"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius="2"/></filter></svg>#pixelate');
+  --pixel-border-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="black" /></svg>') 2 / 2 / 1;
+  --pixel-border-image-rounded: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="black" /></svg>') 3 / 3 / 2;
   --pixelate-filter-2px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx=".5" dy=".5" width="2" height="2"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius=".5"/></filter></svg>#pixelate');
+  --pixelate-filter-4px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx="1.5" dy="1.5" width="4" height="4"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius="2"/></filter></svg>#pixelate');
   --round-rect-2px: polygon(
-  0 2px, 2px 2px, 2px 0,
-  calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px,
-  100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%,
-  2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
+    0 2px, 2px 2px, 2px 0,
+    calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px,
+    100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%,
+    2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
   --round-rect-4px: polygon(
-  0 4px, 2px 4px, 2px 2px, 4px 2px, 4px 0,
-  calc(100% - 4px) 0, calc(100% - 4px) 2px, calc(100% - 2px) 2px,  calc(100% - 2px) 4px, 100% 4px,
-  100% calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px),  calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) 100%,
-  4px 100%, 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0 calc(100% - 4px));
+    0 4px, 2px 4px, 2px 2px, 4px 2px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 2px, calc(100% - 2px) 2px,  calc(100% - 2px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px),  calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) 100%,
+    4px 100%, 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0 calc(100% - 4px));
 }
