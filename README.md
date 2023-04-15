@@ -44,7 +44,7 @@
 
 建議使用語法來更改背景，避免圖片被壓縮。
 
-```
+```css
 ._lch_::before {
   display: block;
   position: fixed;
