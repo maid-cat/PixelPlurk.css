@@ -2,21 +2,56 @@
 
 # PixelPlurk.css
 
-![preview](https://images.plurk.com/2APmsPVm8ltOILPA01A9mH.png)
 像素風格噗浪佈景！
+
+![preview](https://images.plurk.com/2APmsPVm8ltOILPA01A9mH.png)
 
 
 ## 安裝
 
 複製[本體CSS](https://github.com/maid-cat/PixelPlurk.css/blob/main/PixelPlurk.css)，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
 
+## 特色
+
+### 高完成度！
+
+調整了河道、噗文展開、頂端列、浮動視窗、主控面板、發噗介面...
+
+![](https://images.plurk.com/2D3D03XRbHLObfoyscy5TY.png)
+
+
+### 自訂色彩
+
+可自行搭配背景色與邊線顏色，
+
+![](https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png) ![](https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png)
+
+
 ## 自訂
 
 ### 邊線顏色
 
 預設為黑色邊線，可修改CSS開頭`/* 參數設定 */`區塊的`--pixel-color`值來調整為想要的顏色。例如：
+
 ```
   --pixel-color: #009487;
+```
+
+### 河道背景圖
+
+建議使用語法來更改背景，避免圖片被壓縮。
+
+```
+._lch_::before {
+  display: block;
+  position: fixed;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url(<圖片網址>);
+  background-size: cover;
+  image-rendering: pixelated;
+}
 ```
 
 
@@ -38,6 +73,7 @@
   background-color: <色碼>;
 }
 ```
+
 
 
 ## 特別感謝
