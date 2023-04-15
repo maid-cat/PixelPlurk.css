@@ -26,9 +26,10 @@
 
 可自行搭配背景色與邊線顏色，
 
-<img src="https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png" width="30%"></img>
-<img src="https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png" width="30%"></img>
-<img src="https://images.plurk.com/sbU5O7sslqxiNcmfiKZyZ.png" width="30%"></img>
+<img src="https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png" width="40%"></img>
+<img src="https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png" width="40%"></img>
+<img src="https://images.plurk.com/sbU5O7sslqxiNcmfiKZyZ.png" width="40%"></img>
+<img src="https://images.plurk.com/1koyae3ZxNNbyrFVQC9cKr.jpg" width="40%"></img>
 
 
 ## 自訂
