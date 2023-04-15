@@ -6,6 +6,8 @@
 
 ![preview](https://images.plurk.com/2APmsPVm8ltOILPA01A9mH.png)
 
+- 製作：[欸個](https://www.plurk.com/egg820/invite)
+- 排版建議、字型技術支援：[千秋](https://www.plurk.com/akira02/invite)
 
 ## 安裝
 
