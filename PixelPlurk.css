@@ -746,12 +746,24 @@
 :is(url({)), .pop-window-view, :is(url(})) {
   border-radius: 0;
   border: none;
-  background-image: var(--pixel-rounded-background-image);
   box-shadow: var(--pixel-rounded-box-shadow);
-  padding: var(--pixel-size);
+}
+:is(url({)), .pop-window-view::after, :is(url(})) {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--pixel-rounded-background-image);
+  pointer-events: none;
 }
 :is(url({)), .pop-window-header, :is(url(})) {
   border-bottom: var(--pixel-border);
+}
+:is(url({)), .cbox_right .cbox_ads, :is(url(})) {
+  border-top: none;
 }
 :is(url({)), .form-table, :is(url(})) {
   border-radius: 0;
