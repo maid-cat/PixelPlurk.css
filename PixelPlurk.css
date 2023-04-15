@@ -745,19 +745,10 @@
 
 :is(url({)), .pop-window-view, :is(url(})) {
   border-radius: 0;
-  border: none;
   box-shadow: var(--pixel-rounded-box-shadow);
-}
-:is(url({)), .pop-window-view::after, :is(url(})) {
-  position: absolute;
-  display: block;
-  content: '';
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   background-image: var(--pixel-rounded-background-image);
-  pointer-events: none;
+  padding: var(--pixel-size);
+  box-sizing: content-box;
 }
 :is(url({)), .pop-window-header, :is(url(})) {
   border-bottom: var(--pixel-border);
@@ -849,7 +840,7 @@
     conic-gradient(from 180deg at right var(--pixel-size) bottom var(--pixel-size), transparent 75%, var(--pixel-color) 0),
     conic-gradient(from 270deg at left var(--pixel-size) bottom var(--pixel-size), transparent 75%, var(--pixel-color) 0);
   --pixel-rounded-background-image-no-bottom:
-    conic-gradient(at left var(--pixel-size) top var(--pixel-size), transparent 75%, var(--pixel-color) 0),
+     conic-gradient(at left var(--pixel-size) top var(--pixel-size), transparent 75%, var(--pixel-color) 0),
     conic-gradient(from 90deg at right var(--pixel-size) top var(--pixel-size), transparent 75%, var(--pixel-color) 0);
   --pixel-rounded-background-image-no-top:
     conic-gradient(from 180deg at right var(--pixel-size) bottom var(--pixel-size), transparent 75%, var(--pixel-color) 0),
