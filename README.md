@@ -2,7 +2,9 @@
 
 # PixelPlurk.css
 
-像素風格噗浪佈景
+![preview](https://images.plurk.com/2APmsPVm8ltOILPA01A9mH.png)
+像素風格噗浪佈景！
+
 
 ## 安裝
 
@@ -40,5 +42,6 @@
 
 ## 特別感謝
 
-- [NES.css](https://nostalgic-css.github.io/NES.css/)
-- [俐方體11號／Cubic 11](https://github.com/ACh-K/Cubic-11)
+- [NES.css](https://nostalgic-css.github.io/NES.css/): 像素風語法參考
+- [俐方體11號／Cubic 11](https://github.com/ACh-K/Cubic-11): 像素風字型
+- [CSS-Tricks](https://css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties/): `conic-gradient`語法
