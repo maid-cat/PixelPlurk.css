@@ -838,11 +838,6 @@
     0 -.077em var(--pixel-color);
   --pixel-inset-shadow:
     inset 0 0 0 var(--pixel-size) var(--pixel-color);
-  /* from: https://nostalgic-css.github.io/NES.css/ */
-  --pixel-border-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="black" /></svg>') 2 / 2 / 1;
-  --pixel-border-image-rounded: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="black" /></svg>') 3 / 3 / 2;
-  --pixelate-filter-2px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width=".2" height=".2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx=".9" dy=".9" width="2" height="2"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius=".9"/></filter></svg>#pixelate');
-  --pixelate-filter-4px: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="pixelate" x="0" y="0" width="100%" height="100%"><feColorMatrix width="1" height="1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"/><feOffset dx="1.5" dy="1.5" width="4" height="4"/><feTile/><feComposite in="SourceGraphic" operator="in"/><feMorphology operator="dilate" radius="2"/></filter></svg>#pixelate');
   --round-rect-2px: polygon(
     0 2px, 2px 2px, 2px 0,
     calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px,
@@ -853,5 +848,4 @@
     calc(100% - 4px) 0, calc(100% - 4px) 2px, calc(100% - 2px) 2px,  calc(100% - 2px) 4px, 100% 4px,
     100% calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px),  calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) 100%,
     4px 100%, 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0 calc(100% - 4px));
-  --hexagon-40px: path('M16,0h4v2h4v2h2v2h4v2h4v2h2v20h-2v2h-4v2h-4v2h-2v2h-4v2h-4v-2h-4v-2h-2v-2h-4v-2h-4v-2h-2v-20h2v-2h4v-2h4v-2h2v-2h4v-2');
 }
