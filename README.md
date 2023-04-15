@@ -16,9 +16,9 @@
 
 ## 特色
 
-### 高完成度！
+### 細節
 
-調整了河道、噗文展開、頂端列、浮動視窗、主控面板、發噗介面...
+對河道、噗文、頂端列、浮動視窗、主控面板、發噗介面等，都盡可能做了完整的處理
 
 <img src="https://images.plurk.com/2D3D03XRbHLObfoyscy5TY.png" width="40%"></img>
 <img src="https://images.plurk.com/32vQTHQKEe8Sm22EWTk2wh.png" width="40%"></img>
