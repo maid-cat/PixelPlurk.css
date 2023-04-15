@@ -9,6 +9,7 @@
 - 製作：[欸個](https://www.plurk.com/egg820/invite)
 - 排版建議、字型技術支援：[千秋](https://www.plurk.com/akira02/invite)
 
+
 ## 安裝
 
 複製[本體CSS](https://github.com/maid-cat/PixelPlurk.css/blob/main/PixelPlurk.css)，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
@@ -38,55 +39,44 @@
 
 ## 自訂
 
+本體 CSS 中的 `/* 參數設定 */` 區塊提供了數個設定選項，方便調整樣式：
+
 ### 邊線顏色
 
-預設為黑色邊線，可修改CSS中 `/* 參數設定 */` 區塊的 `--pixel-color` 值來指定想要的顏色。例如：
+預設為黑色邊線，可以修改 `--pixel-color` 的數值來指定想要的顏色。例如：
 
 ```
   --pixel-color: #009487;
 ```
 
-### 河道背景圖
+### 噗文底色
 
-建議使用語法來更改背景，避免圖片被壓縮。
-
-```css
-/* 河道背景圖 */
-._lch_::before {
-  display: block;
-  position: fixed;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-image: url(<圖片網址>);
-  background-size: cover;
-  image-rendering: pixelated;
-}
+預設為白色，可以修改 `--plurk-background-color` 的數值來指定想要的底色：
+```
+  --plurk-background-color: 色碼;
 ```
 
+### 河道背景圖
 
-### 噗文背景色
+可以修改 `--timeline-background-image` 來指定背景圖的網址：
 
-```css
-/* 噗文背景色 */
-.timeline-cnt .plurk_cnt, #form_holder, :is(url({)), .pop-window-view, :is(url(})) {
-  background-color: <色碼>;
-}
-/* 將擋住背景的元件更改為透明 */
-#form_holder .plurk_cnt, #form_holder .login_to_see, :is(url({)), .divplurk, .response_box, .mini_form, :is(url(})) {
-  background-color: transparent !important;
-}
+```
+  --timeline-background-image: url(圖片網址);
 ```
 
 ### 主控台背景色
 
+可以加入以下語法來做設定：
+
 ```css
 /* 主控台背景色 */
 .segment-content {
-  background-color: <色碼>;
+  background-color: 色碼;
 }
 ```
 
+
+也可以使用疾患大的[噗浪語法產生器](https://www.plurk.com/p/o6zwul)來做更詳細的設定。
 
 
 ## 特別感謝

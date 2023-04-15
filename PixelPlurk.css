@@ -1,7 +1,50 @@
 /* 參數設定 */
 :is(url({)), html, :is(url(})) {
+  /* 邊線顏色 */
   --pixel-color: black;
+  /* 河道背景圖 */
+  --timeline-background-image: none;
+  /* 噗文底色 */
+  --plurk-background-color: white;
+  /* 邊線粗細（尚不支援修改）*/
   --pixel-size: 2px;
+}
+
+
+/* 河道背景圖 */
+._lch_::before {
+  display: block;
+  position: fixed;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: var(--timeline-background-image);
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+/* 噗文底色 */
+:is(url({)),
+  div.plurk_cnt,
+  div#form_holder,
+  .pop-window-view,
+:is(url(})) {
+  background-color: white;
+}
+:is(url({)),
+  .response .plurk_cnt,
+  .plurk_box div.login_to_see,
+  div.divplurk,
+  div.response_box,
+  .plurk_box div.mini_form,
+:is(url(})) {
+  background-color: transparent;
+}
+:is(url({)),
+  .response.show-response-manager div.plurk_cnt,
+  div.divresponse.show-response-manager,
+:is(url(})) {
+  background-color: rgba(205, 205, 175, 0.1);
 }
 
 /* 河道排版 */
