@@ -24,7 +24,7 @@
 .timeline-cnt .plurk_cnt, #form_holder, :is(url({)), .pop-window-view, :is(url(})) {
   background-color: <色碼>;
 }
- #form_holder .plurk_cnt, :is(url({)), .divplurk, .response_box, .mini_form, :is(url(})) {
+#form_holder .plurk_cnt, #form_holder .login_to_see, :is(url({)), .divplurk, .response_box, .mini_form, :is(url(})) {
   background-color: transparent !important;
 }
 ```
