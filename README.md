@@ -24,7 +24,7 @@
 
 ### 自訂色彩
 
-可自行搭配背景色與邊線顏色，
+可以依喜歡的風格，自由選擇背景色與邊線色彩
 
 <img src="https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png" width="40%"></img>
 <img src="https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png" width="40%"></img>
@@ -36,7 +36,7 @@
 
 ### 邊線顏色
 
-預設為黑色邊線，可修改CSS開頭`/* 參數設定 */`區塊的`--pixel-color`值來調整為想要的顏色。例如：
+預設為黑色邊線，可修改CSS中 `/* 參數設定 */` 區塊的 `--pixel-color` 值來指定想要的顏色。例如：
 
 ```
   --pixel-color: #009487;
