@@ -18,6 +18,8 @@
 調整了河道、噗文展開、頂端列、浮動視窗、主控面板、發噗介面...
 
 <img src="https://images.plurk.com/2D3D03XRbHLObfoyscy5TY.png" width="30%"></img>
+<img src="https://images.plurk.com/4TSdsZTyyjp6I1ZqMARGcY.png" width="30%"></img>
+<img src="https://images.plurk.com/RG7wHrSuAlW06ss0gZyc0.png" width="30%"></img>
 
 ### 自訂色彩
 
