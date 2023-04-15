@@ -17,14 +17,14 @@
 
 調整了河道、噗文展開、頂端列、浮動視窗、主控面板、發噗介面...
 
-![](https://images.plurk.com/2D3D03XRbHLObfoyscy5TY.png)
-
+<img src="https://images.plurk.com/2D3D03XRbHLObfoyscy5TY.png" width="30%"></img>
 
 ### 自訂色彩
 
 可自行搭配背景色與邊線顏色，
 
-![](https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png) ![](https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png)
+<img src="https://images.plurk.com/6zoMTZdw7DHQOzGYa0GT2C.png" width="30%"></img>
+<img src="https://images.plurk.com/1vaULZXh8vqCCeKOEenF2C.png" width="30%"></img>
 
 
 ## 自訂
