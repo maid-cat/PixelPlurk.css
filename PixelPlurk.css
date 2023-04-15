@@ -1,3 +1,9 @@
+/* 參數設定 */
+:is(url({)), html, :is(url(})) {
+  --pixel-color: black;
+  --pixel-size: 2px;
+}
+
 /* 河道排版 */
 #timeline_holder {
   height: calc(100vh - 42px - 70px) !important;
@@ -803,13 +809,8 @@
   height: 30px !important;
 }
 
-
-
-
-
+/* 其他參數 */
 :is(url({)), html, :is(url(})) {
-  --pixel-color: black;
-  --pixel-size: 2px;
   --neg-pixel-size: calc(-1 * var(--pixel-size));
   --pixel-border: var(--pixel-size) solid var(--pixel-color);
   --pixel-box-shadow:
@@ -841,7 +842,6 @@
   --pixel-rounded-background-image-no-top:
     conic-gradient(from 180deg at right var(--pixel-size) bottom var(--pixel-size), transparent 75%, var(--pixel-color) 0),
     conic-gradient(from 270deg at left var(--pixel-size) bottom var(--pixel-size), transparent 75%, var(--pixel-color) 0);
-
   /* 1/13 ~= .077 */
   --pixel-text-shadow:
     .077em 0 var(--pixel-color),
