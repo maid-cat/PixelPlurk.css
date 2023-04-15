@@ -11,6 +11,7 @@
 
 複製[本體CSS](https://github.com/maid-cat/PixelPlurk.css/blob/main/PixelPlurk.css)，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
 
+
 ## 特色
 
 ### 高完成度！
@@ -47,6 +48,7 @@
 建議使用語法來更改背景，避免圖片被壓縮。
 
 ```css
+/* 河道背景圖 */
 ._lch_::before {
   display: block;
   position: fixed;
@@ -63,6 +65,7 @@
 ### 噗文背景色
 
 ```css
+/* 噗文背景色 */
 .timeline-cnt .plurk_cnt, #form_holder, :is(url({)), .pop-window-view, :is(url(})) {
   background-color: <色碼>;
 }
@@ -74,6 +77,7 @@
 ### 主控台背景色
 
 ```css
+/* 主控台背景色 */
 .segment-content {
   background-color: <色碼>;
 }
