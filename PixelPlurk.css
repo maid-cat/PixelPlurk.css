@@ -619,6 +619,18 @@
   box-shadow: var(--pixel-rounded-box-shadow);
   padding: var(--pixel-size);
 }
+:is(url({)), .pop-view[direction=right], :is(url(})) {
+  transform: translateX(var(--pixel-size));
+}
+:is(url({)), .pop-view[direction=left], :is(url(})) {
+  transform: translateX(var(--neg-pixel-size));
+}
+:is(url({)), .pop-view[direction=bottom], :is(url(})) {
+  transform: translateY(var(--pixel-size));
+}
+:is(url({)), .pop-view[direction=top], :is(url(})) {
+  transform: translateY(var(--neg-pixel-size));
+}
 :is(url({)), .pop-view-content, :is(url(})) {
   padding: 2px;
 }
