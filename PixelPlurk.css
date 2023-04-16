@@ -109,6 +109,9 @@
 }
 .plurk_icon, .pinned_plurk_icon {
   top: -6px;
+  transform: translateX(-6px);
+}
+.plurk_icon.coin {
   transform: translateX(-8px);
 }
 .p_img {
