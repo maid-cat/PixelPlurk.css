@@ -75,6 +75,16 @@
 }
 ```
 
+如果是使用噗浪的經典佈景的話，可以再加入以下這段，去除主控台外圍的背景：
+
+```css
+/* 去除主控台外圍背景 */
+#plurk-dashboard {
+  background: none;
+  border: none;
+}
+```
+
 
 也可以使用疾患大的[噗浪語法產生器](https://www.plurk.com/p/o6zwul)來做更詳細的設定。
 
