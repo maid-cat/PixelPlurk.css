@@ -83,4 +83,11 @@
 
 - [NES.css](https://nostalgic-css.github.io/NES.css/): 像素風語法參考
 - [俐方體11號／Cubic 11](https://github.com/ACh-K/Cubic-11): 像素風字型
-- [CSS-Tricks](https://css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties/): `conic-gradient`語法
+- [CSS-Tricks](https://css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties/): `conic-gradient` 語法
+
+#### 預覽圖使用的圖片素材
+- [Country Side Platfformer](https://ansimuz.itch.io/country-side-platfformer)
+- [Post-apocalyptic background](https://pashasmith.itch.io/post-apocalyptic-background)
+- [Mountain Dusk Parallax background](https://ansimuz.itch.io/mountain-dusk-parallax-background)
+- [Free Pixel Art Winter Forest](https://edermunizz.itch.io/free-pixel-art-winter-forest)
+- [Free backgrounds (Pixel)](https://commodorette.itch.io/free-backgrounds)
