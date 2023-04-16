@@ -70,7 +70,7 @@
 預設值為 `40px`，想恢復為噗浪原始大小的話，可以修改成 `20px`：
 
 ```
-  --timeline-avatar-size 20px;
+  --timeline-avatar-size: 20px;
 ```
 
 
