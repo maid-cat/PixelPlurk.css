@@ -264,7 +264,7 @@
   font-family: "PlurkIconFont";
   src: url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.woff2') format('woff2'),
     url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.ttf') format('ttf');
+    url('https://cdn.jsdelivr.net/gh/maid-cat/PixelPlurk.css/fonts/PlurkIconFont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
