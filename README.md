@@ -64,6 +64,17 @@
   --timeline-background-image: url(圖片網址);
 ```
 
+### 河道頭像尺寸
+
+可以修改 `--timeline-avatar-size` 來指定河道上噗文頭像的尺寸。
+預設值為 `40px`，想恢復為噗浪原始大小的話，可以修改成 `20px`：
+
+```
+  --timeline-avatar-size 20px;
+```
+
+
+
 ### 主控台背景色
 
 可以加入以下語法來做設定：

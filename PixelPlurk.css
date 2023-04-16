@@ -6,10 +6,11 @@
   --timeline-background-image: none;
   /* 噗文底色 */
   --plurk-background-color: white;
+  /* 河道噗文頭像尺寸 */
+  --timeline-avatar-size: 40px;
   /* 邊線粗細（尚不支援修改）*/
   --pixel-size: 2px;
 }
-
 
 /* 河道背景圖 */
 ._lch_::before {
@@ -103,7 +104,7 @@
   grid-area: img;
   z-index: 1;
   width: auto;
-  margin: 2px;
+  margin: var(--pixel-size);
   margin-right: 0;
 }
 .plurk_icon, .pinned_plurk_icon {
@@ -119,8 +120,8 @@
   display: block;
 }
 .p_img img {
-  width: auto;
-  height: 40px;
+  width: var(--timeline-avatar-size);
+  height: var(--timeline-avatar-size);
 }
 .timeline-cnt .plurk > table > tbody > tr > .td_response_count {
   grid-area: response_count;
@@ -138,9 +139,8 @@
   display: grid;
   grid-template:
     "img qual response_count" 20px
-    "img content content" minmax(0, 1fr) / 44px 1fr auto;
+    "img content content" minmax(0, 1fr) / calc(var(--timeline-avatar-size) + 2 * var(--pixel-size)) 1fr auto;
   grid-template: subgrid / subgrid;
-  padding: 0;
   column-gap: 4px;
 }
 .timeline-cnt .plurk_cnt > table,
