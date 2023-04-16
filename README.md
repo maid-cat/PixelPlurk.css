@@ -15,7 +15,9 @@
 複製[本體CSS](https://github.com/maid-cat/PixelPlurk.css/blob/main/PixelPlurk.css)，貼到 `自訂佈景` -> `自訂佈景風格` 欄位
 
 #### 關於更新
+
 更新版本時，可以繼續使用自己的 `/* 參數設定 */` 區塊，但請留意區塊內是否有增加新的變數，並複製到自己的參數設定中。
+- 2023-04-16 新增了 `--timeline-avatar-size` 變數
 
 ## 特色
 
