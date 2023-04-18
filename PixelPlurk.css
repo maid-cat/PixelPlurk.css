@@ -31,7 +31,7 @@
   div#form_holder,
   .pop-window-view,
 :is(url(})) {
-  background-color: white;
+  background-color: var(--plurk-background-color);
 }
 :is(url({)),
   .response .plurk_cnt,
