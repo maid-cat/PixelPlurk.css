@@ -594,8 +594,9 @@
 
 #plurk-dashboard h2 {
   font-size: 16px;
-  transform: scaleX(1.2);
   transform-origin: top left;
+  transform: scaleX(1.2);
+  width: calc(100% / 1.2);
   letter-spacing: .5em;
   filter: contrast(500%);
   background: none;
