@@ -48,6 +48,12 @@
 :is(url(})) {
   background-color: rgba(175, 175, 205, 0.1);
 }
+:is(url({)), .cbox_right, :is(url(})) {
+  overflow-y: hidden;
+}
+:is(url({)), .cbox_ads, :is(url(})) {
+  position: static !important;
+}
 
 /* 河道排版 */
 #timeline_holder {
@@ -810,6 +816,7 @@
 }
 :is(url({)), .cbox_right .cbox_ads, :is(url(})) {
   border-top: none;
+  box-shadow: none;
 }
 :is(url({)), .form-table, :is(url(})) {
   border-radius: 0;
