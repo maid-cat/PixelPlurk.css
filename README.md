@@ -60,6 +60,18 @@
   --plurk-background-color: 色碼;
 ```
 
+想將底色更改為深色的話，也可以配合以下語法，將噗文文字及暱稱的預設顏色更改為淺色：
+```css
+/* 噗文字色 */
+:is(url({)), .text_holder, :is(url(})) {
+  color: white;
+}
+/* 暱稱預設字色 */
+:is(url({)), .name, :is(url(})) {
+  color: #eee;
+}
+```
+
 ### 河道背景圖
 
 可以修改 `--timeline-background-image` 來指定背景圖的網址：
