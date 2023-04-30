@@ -282,7 +282,7 @@
   border-radius: 0 !important;
   border-width: var(--pixel-size) !important;
   border-style: solid;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)),
   input[type="button"],
@@ -296,7 +296,7 @@
   border: var(--pixel-border);
   border-width: var(--pixel-size) !important;
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2) !important;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   padding: 7px 11px;
 }
 :is(url({)),
@@ -337,7 +337,7 @@
 
 .cmp_back_to_today {
   border-radius: 0;
-  clip-path: var(--round-rect-4px);  
+  clip-path: var(--round-rect-double);  
   width: auto;
   margin-left: 0;
   padding: 0 6px;
@@ -365,7 +365,7 @@
 }
 .plurk_icon:not(.bday), .pinned_plurk_icon {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   outline: var(--pixel-border);
   outline-offset: var(--neg-pixel-size);
 }
@@ -398,13 +398,13 @@
   top: unset;
   background: radial-gradient(transparent 8px, currentColor 8px);
   padding: 0 1.5px;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   outline: var(--pixel-border);
   outline-offset: var(--neg-pixel-size);
 }
 .p_img {
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 .response_count {
   padding-top: 0;
@@ -418,11 +418,11 @@
 }
 .plurk.porn-lock .need-login, .plurk.porn-lock .need-check {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 .timeline_control a, .bottom_start, #time_show {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 .unread_generic {
   background: none;
@@ -433,7 +433,7 @@
 :is(url({)), .qualifier, :is(url(})) {
   padding: .5px 3px;
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   font-size: calc(1em - 1px);
 }
 
@@ -441,7 +441,7 @@
   border-radius: 0;
   padding: 0;
   border-width: var(--pixel-size);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .plurk a.ogvideo::after, .plurk a.videoservices::after, :is(url(})) {
   left: 4px;
@@ -453,7 +453,7 @@
 }
 :is(url({)), .plurk a.pictureservices, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 .plurk-poll {
   border-radius: 0;
@@ -465,7 +465,7 @@
 .poll-candidate, .checkbox--label {
   border-radius: 0;
   border-width: var(--pixel-size);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 .checkbox.radio .checkbox--background {
   border-radius: 0;
@@ -476,7 +476,7 @@
 }
 :is(url({)), .manager a, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 
 #form_holder {
@@ -500,7 +500,7 @@
   border-radius: 0 !important;
 }
 :is(url({)), .response-manager .coin, :is(url(})) {
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 
 .p_img img, .friend_holder img {
@@ -514,7 +514,7 @@
   position: relative;
   background-color: #5e3f2b;
   image-rendering: pixelated;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 #plurk-dashboard .dash-segment-award .segment-content .award_bar div::before {
   content: '';
@@ -531,7 +531,7 @@
 :is(url({)), .input_holder, :is(url(})) {
   border-radius: 0 !important;
   border: var(--pixel-border) !important;
-  clip-path: var(--round-rect-2px) !important;
+  clip-path: var(--round-rect-single) !important;
 }
 :is(url({)), .qual_holder, :is(url(})) {
   padding: 0 !important;
@@ -552,7 +552,7 @@
 .submit_img {
   border-radius: 0;
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
 }
 .submit_img:hover {
@@ -560,12 +560,12 @@
 }
 :is(url({)), .more-options .option-limit, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)), .more-options .comp-input-td .comp-input, :is(url(})) {
   border-radius: 0;
   border-width: var(--pixel-size);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .more-options .selection, .more-options .selection .selection-menu, :is(url(})) {
   border-radius: 0;
@@ -588,7 +588,7 @@
 :is(url({)), .more-options .checkbox, :is(url(})) {
   border-radius: 0;
   border-width: var(--pixel-size) !important;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -647,7 +647,7 @@
 :is(url({)), #top_bar #top-bar-main #navbar-search > div input, :is(url(})) {
   border: none;
   border-radius: 0;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)),
   #top_bar #top-bar-user #navbar-notify .alert,
@@ -662,7 +662,7 @@
 }
 :is(url({)), #top_bar #top-bar-user #navbar-account img, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-2px); 
+  clip-path: var(--round-rect-single); 
 }
 
 :is(url({)), .friend_man, :is(url(})) {
@@ -670,7 +670,7 @@
   border: var(--pixel-border);
   padding: 4px 8px;
   box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .friend_man:hover, :is(url(})) {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
@@ -716,7 +716,7 @@
 :is(url({)), .friends-select-list li .avatar, :is(url(})) {
   border-radius: 0 !important;
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .limited-selector .limited-selector-selected, :is(url(})) {
   border-top: var(--pixel-border);
@@ -725,11 +725,11 @@
 :is(url({)), .limited-selector .limited-selector-selected ul, :is(url(})) {
   border-radius: 0;
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .limited-selector .limited-selector-selected ul, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 
 :is(url({)), .pop-view-content .header, #noti-list .header, :is(url(})) {
@@ -738,7 +738,7 @@
 :is(url({)), #noti-list .header .noti-alert-switch, :is(url(})) {
   border-radius: 0;
   box-shadow: var(--pixel-inset-shadow);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), #noti-list .header .noti-alert-switch .pusher, :is(url(})) {
   box-shadow: var(--pixel-box-shadow), inset -2px -2px rgba(0, 0, 0, 0.2);
@@ -758,7 +758,7 @@
   image-rendering: pixelated;
   border-radius: 0;
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), #emoticon-tabs, :is(url(})) {
   box-shadow: none;
@@ -820,24 +820,24 @@
 }
 :is(url({)), .form-table, :is(url(})) {
   border-radius: 0;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)), .theme-selector, :is(url(})) {
   border-radius: 0 !important;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)), #custom-css-help, .poll-editor-settings-item-title-info, .more-options .question-mark, :is(url(})) {
   border-radius: 0 !important;
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
   font-family: "Cubic 11", "Lucida Console" !important;
 }
 :is(url({)), #creature-selection .creature, :is(url(})) {
   border-radius: 0 !important;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)), .poll-editor-section-content, :is(url(})) {
   border-radius: 0 !important;
-  clip-path: var(--round-rect-4px);
+  clip-path: var(--round-rect-double);
 }
 :is(url({)), .poll-editor-emoticon-button, .poll-editor-emoticon-button:hover, :is(url(})) {
   box-shadow: none !important;
@@ -849,7 +849,7 @@
 :is(url({)), .poll-editor-checkbox-label, :is(url(})) {
   border-radius: 0 !important;
   box-shadow: var(--pixel-inset-shadow);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .poll-editor-checkbox-label::after, :is(url(})) {
   border-radius: 0 !important;
@@ -863,7 +863,7 @@
   height: auto !important;
   width: auto !important;
   border: var(--pixel-border);
-  clip-path: var(--round-rect-2px);
+  clip-path: var(--round-rect-single);
 }
 :is(url({)), .divplurk .avatar img, .divresponse .avatar img, :is(url(})) {
   border-radius: 0 !important;
@@ -915,14 +915,14 @@
     0 -.077em var(--pixel-color);
   --pixel-inset-shadow:
     inset 0 0 0 var(--pixel-size) var(--pixel-color);
-  --round-rect-2px: polygon(
-    0 2px, 2px 2px, 2px 0,
-    calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px,
-    100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%,
-    2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
-  --round-rect-4px: polygon(
-    0 4px, 2px 4px, 2px 2px, 4px 2px, 4px 0,
-    calc(100% - 4px) 0, calc(100% - 4px) 2px, calc(100% - 2px) 2px,  calc(100% - 2px) 4px, 100% 4px,
-    100% calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 2px),  calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) 100%,
-    4px 100%, 4px calc(100% - 2px), 2px calc(100% - 2px), 2px calc(100% - 4px), 0 calc(100% - 4px));
+  --round-rect-single: polygon(
+    0 var(--pixel-size), var(--pixel-size) var(--pixel-size), var(--pixel-size) 0,
+    calc(100% - var(--pixel-size)) 0, calc(100% - var(--pixel-size)) var(--pixel-size), 100% var(--pixel-size),
+    100% calc(100% - var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - var(--pixel-size)), calc(100% - var(--pixel-size)) 100%,
+    var(--pixel-size) 100%, var(--pixel-size) calc(100% - var(--pixel-size)), 0 calc(100% - var(--pixel-size)));
+  --round-rect-double: polygon(
+    0 calc(2 * var(--pixel-size)), var(--pixel-size) calc(2 * var(--pixel-size)), var(--pixel-size) var(--pixel-size), calc(2 * var(--pixel-size)) var(--pixel-size), calc(2 * var(--pixel-size)) 0,
+    calc(100% - 2 * var(--pixel-size)) 0, calc(100% - 2 * var(--pixel-size)) var(--pixel-size), calc(100% - var(--pixel-size)) var(--pixel-size),  calc(100% - var(--pixel-size)) calc(2 * var(--pixel-size)), 100% calc(2 * var(--pixel-size)),
+    100% calc(100% - 2 * var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - 2 * var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - var(--pixel-size)),  calc(100% - 2 * var(--pixel-size)) calc(100% - var(--pixel-size)), calc(100% - 2 * var(--pixel-size)) 100%,
+    calc(2 * var(--pixel-size)) 100%, calc(2 * var(--pixel-size)) calc(100% - var(--pixel-size)), var(--pixel-size) calc(100% - var(--pixel-size)), var(--pixel-size) calc(100% - 2 * var(--pixel-size)), 0 calc(100% - 2 * var(--pixel-size)));
 }
