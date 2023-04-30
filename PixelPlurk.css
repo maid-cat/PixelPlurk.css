@@ -795,7 +795,7 @@
 :is(url({)), .pop-view-arrow::after, :is(url(})) {
   width: 6px;
   height: 6px;
-  transform: none;
+  transform: translateX(var(--pixel-size));
   border: none;
   background-image: var(--pixel-rounded-background-image);
   box-shadow: var(--pixel-rounded-box-shadow);
