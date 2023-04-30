@@ -619,10 +619,6 @@
 .dash-segment-award .segment-content {
   padding: 0;
 }
-#full_name {
-  display: flex;
-  flex-flow: column nowrap;
-}
 
 .profile-pic {
   border-radius: 0 !important;
