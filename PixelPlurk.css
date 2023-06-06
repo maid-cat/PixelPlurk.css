@@ -158,6 +158,10 @@
 .timeline-cnt .plurk_cnt > table > tbody > tr {
   display: contents;
 }
+.timeline-cnt .plurk .time {
+  left: 6px;
+  bottom: 2px; 
+}
 .timeline-cnt .plurk_cnt .td_qual {
   grid-area: qual;
   width: auto;
@@ -181,7 +185,6 @@
 .timeline-cnt .plurk .manager {
   justify-self: end;
 }
-
 
 /* 細長發噗區 */
 #dashboard_holder {
