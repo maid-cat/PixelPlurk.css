@@ -102,6 +102,10 @@
     "img content content" minmax(0, 1fr) / auto 1fr auto;
   column-gap: 4px;
 }
+#timeline_holder div.banana_plurk.impress,
+#timeline_holder.banana_show div.banana_plurk {
+  display: grid;
+}
 .timeline-cnt .plurk > table,
 .timeline-cnt .plurk > table > tbody,
 .timeline-cnt .plurk > table > tbody > tr {
