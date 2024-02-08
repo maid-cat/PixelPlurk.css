@@ -151,11 +151,7 @@
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   display: grid;
-  grid-template:
-    "img qual response_count" 20px
-    "img content content" minmax(0, 1fr) / calc(var(--timeline-avatar-size) + 2 * var(--pixel-size)) 1fr auto;
   grid-template: subgrid / subgrid;
-  column-gap: 4px;
 }
 .timeline-cnt .plurk_cnt > table,
 .timeline-cnt .plurk_cnt > table > tbody,
