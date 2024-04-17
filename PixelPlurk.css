@@ -11,11 +11,6 @@
   /* 邊線粗細（尚不支援修改）*/
   --pixel-size: 2px;
 }
-/* 頂端列參數（僅 Chrome 有效）*/
-:is('{'), #top_bar, :is(url(})) {
-  /* 邊線粗細（需維持與上方 --pixel-size 相同值）*/
-  --pixel-size: 2px;
-}
 
 /* 河道背景圖 */
 ._lch_::before {
@@ -164,7 +159,7 @@
 }
 .timeline-cnt .plurk .time {
   left: 6px;
-  bottom: 2px; 
+  bottom: 2px;
 }
 .timeline-cnt .plurk_cnt .td_qual {
   grid-area: qual;
@@ -284,9 +279,6 @@
   src: url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff2') format('woff2'),
     url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff') format('woff'),
     url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/ttf/Cubic_11_1.100_R.ttf') format('truetype');
-  ascent-override: 95.2%;
-  descent-override: 21.3%;
-  lineGap-override: 2.8%;
 }
 @font-face {
   font-family: "PlurkIconFont";
@@ -297,31 +289,26 @@
   font-style: normal;
 }
 
-input,
-textarea,
-select,
-.time-picker-input-container,
-._lch_ ~ * input,
-._lch_ ~ * textarea,
-._lch_ ~ * select,
-._lch_ ~ * .time-picker-input-container {
+:is('{'),
+  input,
+  textarea,
+  select,
+  .time-picker-input-container,
+:is([}]) {
   border-radius: 0 !important;
   border-width: var(--pixel-size) !important;
   border-style: solid;
   clip-path: var(--round-rect-single);
 }
 
-input[type="button"],
-input[type="submit"],
-button,
-.button,
-.orange-but,
-#emoticon-selector .header .manager-button,
-._lch_ ~ * input[type="button"],
-._lch_ ~ * input[type="submit"],
-._lch_ ~ * button,
-._lch_ ~ * .button,
-._lch_ ~ * .orange-but {
+:is('{'),
+  input[type="button"],
+  input[type="submit"],
+  button,
+  .button,
+  .orange-but,
+  #emoticon-selector .header .manager-button,
+:is([}]) {
   border-radius: 0 !important;
   border: var(--pixel-border);
   border-width: var(--pixel-size) !important;
@@ -329,52 +316,51 @@ button,
   clip-path: var(--round-rect-single);
   padding: 7px 11px;
 }
-input[type="button"]:hover,
-input[type="submit"]:hover,
-button:hover,
-.button:hover,
-.orange-but:hover,
-#emoticon-selector .header .manager-button:hover,
-._lch_ ~ * input[type="button"]:hover,
-._lch_ ~ * input[type="submit"]:hover,
-._lch_ ~ * button:hover,
-._lch_ ~ * .button:hover,
-._lch_ ~ * .orange-but:hover,
- {
+
+:is('{'),
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  button:hover,
+  .button:hover,
+  .orange-but:hover,
+  #emoticon-selector .header .manager-button:hover,
+:is([}]) {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
 }
-input[type="button"].small-button,
-input[type="submit"].small-button,
-button.small-button,
-.button.small-button,
-.orange-but.small-button,
-._lch_ ~ * input[type="button"].small-button,
-._lch_ ~ * input[type="submit"].small-button,
-._lch_ ~ * button.small-button,
-._lch_ ~ * .button.small-button,
-._lch_ ~ * .orange-but.small-button {
+:is('{'),
+  input[type="button"].small-button,
+  input[type="submit"].small-button,
+  button.small-button,
+  .button.small-button,
+  .orange-but.small-button,
+:is([}]) {
   padding: 4px 8px;
 }
-#emoticon-selector .header .manager-button {
+:is('{'), #emoticon-selector .header .manager-button, :is([}]) {
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-._lch_,
+
+:is('{'), body, #top_bar, button, :is([}]),
 ._lch_ h2,
 .karma_hover,
-.unread_generic,
-button,
-._lch_ ~ *,
-._lch_ ~ * button {
+.unread_generic {
   font-family: "Cubic 11", 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans Regular', Tahoma, Verdana, sans-serif;
 }
+:is('{'),
+  [class^="pif-"]:not(.icon_only)::before,
+  [class*=" pif-"]:not(.icon_only)::before,
+:is([}]) {
+  vertical-align: -15%;
+}
+
 
 .cmp_back_to_today {
   border-radius: 0;
-  clip-path: var(--round-rect-double);  
+  clip-path: var(--round-rect-double);
   width: auto;
   margin-left: 0;
   padding: 0 6px;
@@ -709,8 +695,13 @@ button,
   display: none;
 }
 
-/* 頂端列（僅 Chrome 有效）*/
-:is('{'), #top_bar #top-bar-main #navbar-search > div input, :is(url(})) {
+/* 頂端列*/
+:is('{'), #top_bar #top-bar-title #plurk_logo, :is([}]) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:is('{'), #top_bar #top-bar-main #navbar-search > div input, :is([}]) {
   border: none;
   border-radius: 0;
   clip-path: var(--round-rect-double);
@@ -718,7 +709,7 @@ button,
 :is('{'),
   #top_bar #top-bar-user #navbar-notify .alert,
   #top_bar #top-bar-user #navbar-premium .alert,
-:is(url(})) {
+:is([}]) {
   transform: none;
   width: 4px;
   height: 4px;
@@ -726,9 +717,9 @@ button,
   margin-right: 4px;
   margin-top: 2px;
 }
-:is('{'), #top_bar #top-bar-user #navbar-account img, :is(url(})) {
+:is('{'), #top_bar #top-bar-user #navbar-account img, :is([}]) {
   border-radius: 0;
-  clip-path: var(--round-rect-single); 
+  clip-path: var(--round-rect-single);
 }
 
 ._lch_ ~ .pop-view .friend_man {
@@ -953,7 +944,7 @@ button,
 }
 
 /* 其他參數 */
-._lch_, ._lch_ ~ * {
+:is('{'), html, :is([}]) {
   --neg-pixel-size: calc(-1 * var(--pixel-size));
   --pixel-border: var(--pixel-size) solid var(--pixel-color);
   --pixel-box-shadow:
@@ -993,19 +984,6 @@ button,
     0 -.077em var(--pixel-color);
   --pixel-inset-shadow:
     inset 0 0 0 var(--pixel-size) var(--pixel-color);
-  --round-rect-single: polygon(
-    0 var(--pixel-size), var(--pixel-size) var(--pixel-size), var(--pixel-size) 0,
-    calc(100% - var(--pixel-size)) 0, calc(100% - var(--pixel-size)) var(--pixel-size), 100% var(--pixel-size),
-    100% calc(100% - var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - var(--pixel-size)), calc(100% - var(--pixel-size)) 100%,
-    var(--pixel-size) 100%, var(--pixel-size) calc(100% - var(--pixel-size)), 0 calc(100% - var(--pixel-size)));
-  --round-rect-double: polygon(
-    0 calc(2 * var(--pixel-size)), var(--pixel-size) calc(2 * var(--pixel-size)), var(--pixel-size) var(--pixel-size), calc(2 * var(--pixel-size)) var(--pixel-size), calc(2 * var(--pixel-size)) 0,
-    calc(100% - 2 * var(--pixel-size)) 0, calc(100% - 2 * var(--pixel-size)) var(--pixel-size), calc(100% - var(--pixel-size)) var(--pixel-size),  calc(100% - var(--pixel-size)) calc(2 * var(--pixel-size)), 100% calc(2 * var(--pixel-size)),
-    100% calc(100% - 2 * var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - 2 * var(--pixel-size)), calc(100% - var(--pixel-size)) calc(100% - var(--pixel-size)),  calc(100% - 2 * var(--pixel-size)) calc(100% - var(--pixel-size)), calc(100% - 2 * var(--pixel-size)) 100%,
-    calc(2 * var(--pixel-size)) 100%, calc(2 * var(--pixel-size)) calc(100% - var(--pixel-size)), var(--pixel-size) calc(100% - var(--pixel-size)), var(--pixel-size) calc(100% - 2 * var(--pixel-size)), 0 calc(100% - 2 * var(--pixel-size)));
-}
-/* 頂端列其他參數（僅 Chrome 有效）*/
-:is('{'), #top_bar, :is(url(})) {
   --round-rect-single: polygon(
     0 var(--pixel-size), var(--pixel-size) var(--pixel-size), var(--pixel-size) 0,
     calc(100% - var(--pixel-size)) 0, calc(100% - var(--pixel-size)) var(--pixel-size), 100% var(--pixel-size),
