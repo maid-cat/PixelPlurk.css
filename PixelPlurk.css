@@ -532,20 +532,20 @@
   border-top: var(--pixel-border) !important;
 }
 .plurk_box .mini_form .icons_holder,
-._lch_ ~ .plurk_box .mini_form .icons_holder {
+._lch_ ~ .pop-window .plurk_box .mini_form .icons_holder {
   margin: 0;
 }
 .response-manager,
-._lch_ ~ .response-manager {
+._lch_ ~ .pop-window .response-manager {
   border-width: var(--pixel-size) !important;
   border-bottom: none !important;
 }
 .response-manager > *,
-._lch_ ~ .response-manager > * {
+._lch_ ~ .pop-window .response-manager > * {
   border-radius: 0 !important;
 }
 .response-manager .coin,
-._lch_ ~ .response-manager .coin {
+._lch_ ~ .pop-window .response-manager .coin {
   clip-path: var(--round-rect-single);
 }
 
