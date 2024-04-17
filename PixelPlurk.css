@@ -31,7 +31,6 @@
 ._lch_ ~ :where(.pop-window) :where(.pop-window-view) {
   background-color: var(--plurk-background-color);
 }
-
 .response .plurk_cnt,
 .plurk_box div.login_to_see,
 .response_box,
@@ -41,12 +40,10 @@
 ._lch_ ~ .pop-window .plurk_box .mini_form {
   background-color: transparent;
 }
-
 .response.show-response-manager .plurk_cnt,
 ._lch_ ~ .pop-window .divresponse.show-response-manager {
   background-color: rgba(175, 175, 205, 0.1);
 }
-
 ._lch_ ~ .pop-window .cbox_right {
   overflow-y: hidden;
 }
@@ -265,16 +262,9 @@
 }
 
 
-/* 像素風格 */
+/* 像素字型、圖示 */
 @font-face {
   font-family: "Cubic 11";
-  font-display: swap;
-  src: url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/ttf/Cubic_11_1.100_R.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Helvetica Neue";
   font-display: swap;
   src: url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff2') format('woff2'),
     url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff') format('woff'),
@@ -288,7 +278,20 @@
   font-weight: normal;
   font-style: normal;
 }
+:is('{'), body, #top_bar, button, :is([}]),
+._lch_ h2,
+.karma_hover,
+.unread_generic {
+  font-family: "Cubic 11", 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans Regular', Tahoma, Verdana, sans-serif;
+}
+:is('{'),
+  [class^="pif-"]:not(.icon_only)::before,
+  [class*=" pif-"]:not(.icon_only)::before,
+:is([}]) {
+  vertical-align: -15%;
+}
 
+/* 按鈕樣式 */
 :is('{'),
   input,
   textarea,
@@ -300,7 +303,6 @@
   border-style: solid;
   clip-path: var(--round-rect-single);
 }
-
 :is('{'),
   input[type="button"],
   input[type="submit"],
@@ -316,7 +318,6 @@
   clip-path: var(--round-rect-single);
   padding: 7px 11px;
 }
-
 :is('{'),
   input[type="button"]:hover,
   input[type="submit"]:hover,
@@ -343,21 +344,7 @@
   align-items: center;
 }
 
-
-:is('{'), body, #top_bar, button, :is([}]),
-._lch_ h2,
-.karma_hover,
-.unread_generic {
-  font-family: "Cubic 11", 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans Regular', Tahoma, Verdana, sans-serif;
-}
-:is('{'),
-  [class^="pif-"]:not(.icon_only)::before,
-  [class*=" pif-"]:not(.icon_only)::before,
-:is([}]) {
-  vertical-align: -15%;
-}
-
-
+/* 河道箭頭 */
 .cmp_back_to_today {
   border-radius: 0;
   clip-path: var(--round-rect-double);
@@ -376,6 +363,8 @@
   margin-right: .5ch;
   color: inherit;
 }
+
+/* 噗首 */
 .timeline-cnt .plurk_cnt {
   border: none;
   background-image: var(--pixel-rounded-background-image);
@@ -460,7 +449,6 @@
   clip-path: var(--round-rect-single);
   font-size: calc(1em - 1px);
 }
-
 .plurk a.meta,
 .plurk a.meta:hover,
 ._lch_ ~ .pop-window .plurk a.meta,
@@ -518,6 +506,7 @@
   clip-path: var(--round-rect-single);
 }
 
+/* 回應區 */
 #form_holder {
   border: none;
   background-image: var(--pixel-rounded-background-image-no-top);
@@ -549,6 +538,7 @@
   clip-path: var(--round-rect-single);
 }
 
+/* 主控台 */
 .p_img img, .friend_holder img {
   image-rendering: pixelated;
 }
@@ -573,7 +563,49 @@
   background-image: var(--pixel-rounded-background-image);
   box-shadow: var(--pixel-rounded-box-shadow);
 }
+#plurk-dashboard h2 {
+  font-size: 16px;
+  transform-origin: top left;
+  transform: scaleX(1.2);
+  width: calc(100% / 1.2);
+  letter-spacing: .5em;
+  filter: contrast(500%);
+  background: none;
+}
+:not(.dash-segment-award) > .segment-content {
+  border-radius: 0;
+  margin: 2px;
+  margin-top: 12px;
+  border: none;
+  background-image: var(--pixel-rounded-background-image);
+  box-shadow: var(--pixel-rounded-box-shadow);
+  padding: calc(2px + var(--pixel-size));
+}
+.dash-segment-award .segment-content {
+  padding: 0;
+}
+.profile-pic {
+  border-radius: 0 !important;
+  box-shadow: var(--pixel-box-shadow) !important;
+  width: 80px !important;
+  height: 80px !important;
+  left: 3px;
+  top: 3px;
+}
+.premium::before {
+  display: block;
+  font-family: "PlurkIconFont";
+  content: "";
+  font-size: 16px;
+  line-height: 1;
+  text-shadow: var(--pixel-text-shadow);
+  color: #f3d347;
+}
+#premium-icon {
+  display: none;
+}
 
+/* 發噗區 */
 .input_holder,
 ._lch_ ~ .pop-window .input_holder {
   border-radius: 0 !important;
@@ -652,50 +684,7 @@
   position: static;
 }
 
-#plurk-dashboard h2 {
-  font-size: 16px;
-  transform-origin: top left;
-  transform: scaleX(1.2);
-  width: calc(100% / 1.2);
-  letter-spacing: .5em;
-  filter: contrast(500%);
-  background: none;
-}
-:not(.dash-segment-award) > .segment-content {
-  border-radius: 0;
-  margin: 2px;
-  margin-top: 12px;
-  border: none;
-  background-image: var(--pixel-rounded-background-image);
-  box-shadow: var(--pixel-rounded-box-shadow);
-  padding: calc(2px + var(--pixel-size));
-}
-.dash-segment-award .segment-content {
-  padding: 0;
-}
-
-.profile-pic {
-  border-radius: 0 !important;
-  box-shadow: var(--pixel-box-shadow) !important;
-  width: 80px !important;
-  height: 80px !important;
-  left: 3px;
-  top: 3px;
-}
-.premium::before {
-  display: block;
-  font-family: "PlurkIconFont";
-  content: "";
-  font-size: 16px;
-  line-height: 1;
-  text-shadow: var(--pixel-text-shadow);
-  color: #f3d347;
-}
-#premium-icon {
-  display: none;
-}
-
-/* 頂端列*/
+/* 頂端列 */
 :is('{'), #top_bar #top-bar-title #plurk_logo, :is([}]) {
   display: flex;
   justify-content: center;
@@ -722,6 +711,7 @@
   clip-path: var(--round-rect-single);
 }
 
+/* 彈出表單 */
 ._lch_ ~ .pop-view .friend_man {
   border-radius: 0;
   border: var(--pixel-border);
@@ -732,7 +722,6 @@
 ._lch_ ~ .pop-view .friend_man:hover {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
 }
-
 ._lch_ ~ .pop-view {
   border-radius: 0;
   border: none;
@@ -794,7 +783,6 @@
   border-radius: 0;
   clip-path: var(--round-rect-single);
 }
-
 ._lch_ ~ .pop-view .pop-view-content .header,
 ._lch_ ~ .pop-view#noti-list .pop-view-content .header {
   border-bottom: var(--pixel-border);
@@ -855,7 +843,6 @@
 ._lch_ ~ .pop-view.theme-menu ul {
   border-bottom: var(--pixel-border) !important;
 }
-
 ._lch_ ~ .pop-view .pop-view-arrow::after {
   width: 6px;
   height: 6px;
@@ -865,6 +852,7 @@
   box-shadow: var(--pixel-rounded-box-shadow);
 }
 
+/* 彈出視窗 */
 ._lch_ ~ .pop-window .pop-window-view {
   border-radius: 0;
   box-shadow: var(--pixel-rounded-box-shadow);
@@ -941,6 +929,15 @@
 ._lch_ ~ .pop-window .divresponse .avatar img {
   width: 30px !important;
   height: 30px !important;
+}
+
+/* 參數預設值 */
+:is('{'), :where(html), :is([}]) {
+  --pixel-color: black;
+  --timeline-background-image: none;
+  --plurk-background-color: white;
+  --timeline-avatar-size: 40px;
+  --pixel-size: 2px;
 }
 
 /* 其他參數 */
