@@ -828,18 +828,18 @@
   box-shadow: none;
   border-top: var(--pixel-border);
 }
-._lch_ ~ .pop_view .info_menu .profile_pic {
+._lch_ ~ .pop-view .info_menu .profile_pic {
   border-radius: 0;
   box-shadow: var(--pixel-box-shadow);
   image-rendering: pixelated;
 }
-._lch_ ~ .pop_view .info_menu .menu {
+._lch_ ~ .pop-view .info_menu .menu {
   border-top: var(--pixel-border);
 }
-._lch_ ~ .pop_view .info_menu .menu li {
+._lch_ ~ .pop-view .info_menu .menu li {
   margin: 0;
 }
-._lch_ ~ .pop_view .info_menu .menu li:hover {
+._lch_ ~ .pop-view .info_menu .menu li:hover {
   border-radius: 0;
 }
 ._lch_ ~ .pop-view.pop-menu li a:not(.no-hover):hover {
