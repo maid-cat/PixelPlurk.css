@@ -80,14 +80,14 @@
 .timeline-cnt .plurk.display {
   max-height: none;
 }
-.plurk[style$="top: 5.5%;"] {grid-row: 1 / 2;}
-.plurk[style$="top: 17.125%;"] {grid-row: 2 / 3;}
-.plurk[style$="top: 28.75%;"] {grid-row: 3 / 4;}
-.plurk[style$="top: 40.375%;"] {grid-row: 4 / 5;}
-.plurk[style$="top: 52%;"] {grid-row: 5 / 6;}
-.plurk[style$="top: 63.625%;"] {grid-row: 6 / 7;}
-.plurk[style$="top: 75.25%;"] {grid-row: 7 / 8;}
-.plurk[style$="top: 86.875%;"] {grid-row: 8 / 9;}
+.plurk[style*="top: 5.5%;"] {grid-row: 1 / 2;}
+.plurk[style*="top: 17.125%;"] {grid-row: 2 / 3;}
+.plurk[style*="top: 28.75%;"] {grid-row: 3 / 4;}
+.plurk[style*="top: 40.375%;"] {grid-row: 4 / 5;}
+.plurk[style*="top: 52%;"] {grid-row: 5 / 6;}
+.plurk[style*="top: 63.625%;"] {grid-row: 6 / 7;}
+.plurk[style*="top: 75.25%;"] {grid-row: 7 / 8;}
+.plurk[style*="top: 86.875%;"] {grid-row: 8 / 9;}
 
 
 /* 噗首內部排版 */
