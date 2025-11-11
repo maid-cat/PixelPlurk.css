@@ -592,17 +592,9 @@
   left: 3px;
   top: 3px;
 }
-.premium::before {
-  display: block;
-  font-family: "PlurkIconFont";
-  content: "";
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-icons .premium {
   font-size: 16px;
-  line-height: 1;
   text-shadow: var(--pixel-text-shadow);
-  color: #f3d347;
-}
-#premium-icon {
-  display: none;
 }
 
 /* 發噗區 */
