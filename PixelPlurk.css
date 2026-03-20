@@ -480,6 +480,17 @@
   border-radius: 0;
   clip-path: var(--round-rect-single);
 }
+.plurk .video_holder a.pvideo .video_play,
+._lch_ ~ .pop-window .plurk .video_holder a.pvideo .video_play {
+  background: none;
+  padding: 0;
+  align-items: center;
+}
+.plurk .video_holder a.pvideo .video_play .play_icon,
+._lch_ ~ .pop-window .plurk .video_holder a.pvideo .video_play .play_icon {
+  font-size: 24px;
+  text-shadow: var(--pixel-text-shadow);
+}
 .plurk-poll,
 ._lch_ ~ .pop-window .plurk-poll {
   border-radius: 0;
