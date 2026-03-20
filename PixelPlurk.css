@@ -923,6 +923,14 @@
   height: 30px !important;
 }
 
+/* 內建表符 */
+:is('{'),
+  img[src^="https://s.plurk.com/emoticons/"],
+  img[src^="https://s.plurk.com/emoticon_manager/"],
+:is([}]) {
+  image-rendering: pixelated;
+}
+
 /* 參數預設值 */
 :is('{'), :where(html), :is([}]) {
   --pixel-color: black;
