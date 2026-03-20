@@ -850,7 +850,7 @@
 }
 
 /* 彈出視窗 */
-._lch_ ~ .pop-window .pop-window-view {
+._lch_ ~ .pop-window:not(.pop-celebrate-image) .pop-window-view {
   border-radius: 0;
   box-shadow: var(--pixel-rounded-box-shadow);
   background-image: var(--pixel-rounded-background-image);
@@ -926,6 +926,9 @@
 ._lch_ ~ .pop-window .divresponse .avatar img {
   width: 30px !important;
   height: 30px !important;
+}
+._lch_ ~ .pop-celebrate-image .celebrate-text {
+  font-family: inherit;
 }
 
 /* 內建表符 */
