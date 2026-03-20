@@ -266,9 +266,9 @@
 @font-face {
   font-family: "Cubic 11";
   font-display: swap;
-  src: url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/web/Cubic_11_1.100_R.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.100/fonts/ttf/Cubic_11_1.100_R.ttf') format('truetype');
+  src: url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.451/fonts/web/Cubic_11.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.451/fonts/web/Cubic_11.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/ACh-K/Cubic-11@v1.451/fonts/ttf/Cubic_11.ttf') format('truetype');
 }
 @font-face {
   font-family: "PlurkIconFont";
