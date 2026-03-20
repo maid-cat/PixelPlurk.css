@@ -475,6 +475,11 @@
   border-radius: 0;
   clip-path: var(--round-rect-single);
 }
+.plurk .video_holder a.pvideo .video_img,
+._lch_ ~ .pop-window .plurk .video_holder a.pvideo .video_img {
+  border-radius: 0;
+  clip-path: var(--round-rect-single);
+}
 .plurk-poll,
 ._lch_ ~ .pop-window .plurk-poll {
   border-radius: 0;
