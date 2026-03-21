@@ -752,7 +752,8 @@
 ._lch_ ~ .pop-view[direction=top] {
   transform: translateY(var(--neg-pixel-size));
 }
-._lch_ ~ .pop-view .pop-view-content {
+._lch_ ~ .pop-view .pop-view-content,
+._lch_ ~ .pop-menu.response-display-options-menu .pop-view-content {
   padding: 2px;
 }
 ._lch_ ~ .pop-tooltip .pop-view-content {
