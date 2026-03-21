@@ -310,6 +310,7 @@
   .button,
   .orange-but,
   #emoticon-selector .header .manager-button,
+  .response-display-options,
 :is([}]) {
   border-radius: 0 !important;
   border: var(--pixel-border);
@@ -325,6 +326,7 @@
   .button:hover,
   .orange-but:hover,
   #emoticon-selector .header .manager-button:hover,
+  .response-display-options:hover,
 :is([}]) {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2) !important;
 }
