@@ -945,6 +945,10 @@
 ._lch_ ~ .pop-celebrate-image .celebrate-text {
   font-family: inherit;
 }
+._lch_ ~ .colorbox .img-holder .cbox-img-url {
+  border-radius: 0;
+  clip-path: var(--round-rect-single);
+}
 
 /* 內建表符 */
 :is('{'),
