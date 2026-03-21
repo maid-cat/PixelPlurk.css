@@ -730,7 +730,8 @@
 ._lch_ ~ .pop-view .friend_man:hover {
   box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
 }
-._lch_ ~ .pop-view {
+._lch_ ~ .pop-view,
+._lch_ ~ .pop-menu.response-display-options-menu {
   border-radius: 0;
   border: none;
   background-image: var(--pixel-rounded-background-image);
