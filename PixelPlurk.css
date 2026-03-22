@@ -926,6 +926,12 @@ plurk-reaction-emoticon .reaction--clicked,
   background-image: var(--pixel-rounded-background-image);
   box-shadow: var(--pixel-rounded-box-shadow);
 }
+._lch_ ~ .pop-view .emo-adder-panel .emo-groups ul li {
+  border-radius: 0;
+}
+._lch_ ~ .pop-view .emo-adder-panel .emo-groups ul li .new-group {
+  border: none;
+}
 
 /* 彈出視窗 */
 ._lch_ ~ .pop-window:not(.pop-celebrate-image) .pop-window-view {
