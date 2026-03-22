@@ -539,7 +539,8 @@ plurk-reactions,
 }
 plurk-reactions .reactions,
 ._lch_ ~ .pop-window plurk-reactions .reactions,
-plurk-response-reactions .reactions {
+plurk-response-reactions .reactions,
+._lch_ ~ .pop-window plurk-response-reactions .reactions {
   gap: 4px;
   align-items: center;
 }
@@ -547,7 +548,8 @@ plurk-reaction-emoticon .reaction,
 ._lch_ ~ .pop-window plurk-reaction-emoticon .reaction,
 plurk-reactions .reactions__adder,
 ._lch_ ~ .pop-window plurk-reactions .reactions__adder,
-plurk-response-reactions .reactions__adder {
+plurk-response-reactions .reactions__adder,
+._lch_ ~ .pop-window plurk-response-reactions .reactions__adder {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
@@ -560,7 +562,8 @@ plurk-response-reactions .reactions__adder {
 }
 plurk-reactions .reactions__adder,
 ._lch_ ~ .pop-window plurk-reactions .reactions__adder,
-plurk-response-reactions .reactions__adder {
+plurk-response-reactions .reactions__adder,
+._lch_ ~ .pop-window plurk-response-reactions .reactions__adder {
   height: auto;
   font-size: 18px;
   padding-left: .077em;
@@ -571,7 +574,9 @@ plurk-reactions .reactions__adder:hover,
 plurk-reactions .reactions__adder[data-toggle-from],
 ._lch_ ~ .pop-window plurk-reactions .reactions__adder[data-toggle-from],
 plurk-response-reactions .reactions__adder:hover,
-plurk-response-reactions .reactions__adder[data-toggle-from] {
+._lch_ ~ .pop-window plurk-response-reactions .reactions__adder:hover,
+plurk-response-reactions .reactions__adder[data-toggle-from],
+._lch_ ~ .pop-window plurk-response-reactions .reactions__adder[data-toggle-from] {
   color: #ff9b65;
 }
 plurk-reaction-emoticon .reaction__emoticon,
@@ -593,6 +598,9 @@ plurk-reaction-emoticon .reaction--clicked,
 ._lch_ ~ .pop-window plurk-reaction-emoticon .reaction--clicked {
   color: #ff9b65;
   background: none;
+}
+._lch_ ~ .pop-window .divresponse > [data-component="plurk-response-reactions"] {
+  margin-left: 40px;
 }
 
 /* 回應區 */
