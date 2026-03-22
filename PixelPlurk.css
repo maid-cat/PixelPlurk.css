@@ -523,6 +523,69 @@
   border-radius: 0;
   clip-path: var(--round-rect-single);
 }
+/* 互動功能 */
+plurk-reactions,
+._lch_ ~ .pop-window plurk-reactions {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+plurk-reactions .reactions,
+._lch_ ~ .pop-window plurk-reactions .reactions,
+plurk-response-reactions .reactions {
+  gap: 4px;
+  align-items: center;
+}
+plurk-reaction-emoticon .reaction,
+._lch_ ~ .pop-window plurk-reaction-emoticon .reaction,
+plurk-reactions .reactions__adder,
+._lch_ ~ .pop-window plurk-reactions .reactions__adder,
+plurk-response-reactions .reactions__adder {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;
+}
+plurk-reactions .reactions__adder,
+._lch_ ~ .pop-window plurk-reactions .reactions__adder,
+plurk-response-reactions .reactions__adder {
+  height: auto;
+  font-size: 18px;
+  padding-left: .077em;
+  padding-right: .077em;
+}
+plurk-reactions .reactions__adder:hover,
+._lch_ ~ .pop-window plurk-reactions .reactions__adder:hover,
+plurk-reactions .reactions__adder[data-toggle-from],
+._lch_ ~ .pop-window plurk-reactions .reactions__adder[data-toggle-from],
+plurk-response-reactions .reactions__adder:hover,
+plurk-response-reactions .reactions__adder[data-toggle-from] {
+  color: #ff9b65;
+}
+plurk-reaction-emoticon .reaction__emoticon,
+._lch_ ~ .pop-window plurk-reaction-emoticon .reaction__emoticon {
+  min-width: 0;
+  max-height: 18px;
+}
+plurk-reaction-emoticon .reaction__count,
+._lch_ ~ .pop-window plurk-reaction-emoticon .reaction__count {
+  margin-top: .15em;
+  font-size: 14px;
+  line-height: 1;
+}
+plurk-reaction-emoticon .reaction,
+._lch_ ~ .pop-window plurk-reaction-emoticon .reaction {
+  gap: 3px;
+}
+plurk-reaction-emoticon .reaction--clicked,
+._lch_ ~ .pop-window plurk-reaction-emoticon .reaction--clicked {
+  color: #ff9b65;
+  background: none;
+}
 
 /* 回應區 */
 #form_holder {
